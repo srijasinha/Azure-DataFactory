@@ -1,0 +1,95 @@
+{
+	"name": "SqlServerTable1Input",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "Invoice_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "Branch",
+				"type": "varchar"
+			},
+			{
+				"name": "City",
+				"type": "varchar"
+			},
+			{
+				"name": "Customer_type",
+				"type": "varchar"
+			},
+			{
+				"name": "Gender",
+				"type": "varchar"
+			},
+			{
+				"name": "Product_line",
+				"type": "varchar"
+			},
+			{
+				"name": "Unit_price",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Quantity",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "Tax_5",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Total",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Date",
+				"type": "date"
+			},
+			{
+				"name": "Time",
+				"type": "time",
+				"scale": 7
+			},
+			{
+				"name": "Payment",
+				"type": "varchar"
+			},
+			{
+				"name": "cogs",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "gross_margin_percentage",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "gross_income",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Rating",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "supermarket_sales"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
