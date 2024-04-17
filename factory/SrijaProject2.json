@@ -1,0 +1,9 @@
+{
+	"name": "SrijaProject2",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b64d7af1-6b37-497c-88c0-87176baf4f5e",
+		"tenantId": "9cda0186-a3b2-474b-9de8-6187cb4d0f34"
+	}
+}
