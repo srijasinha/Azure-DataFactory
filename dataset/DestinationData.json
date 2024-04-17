@@ -1,0 +1,73 @@
+{
+	"name": "DestinationData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "adf"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Invoice_ID": {
+					"type": "string"
+				},
+				"Branch": {
+					"type": "string"
+				},
+				"City": {
+					"type": "string"
+				},
+				"Customer_type": {
+					"type": "string"
+				},
+				"Gender": {
+					"type": "string"
+				},
+				"Product_line": {
+					"type": "string"
+				},
+				"Unit_price": {
+					"type": "string"
+				},
+				"Quantity": {
+					"type": "string"
+				},
+				"Tax_5": {
+					"type": "string"
+				},
+				"Total": {
+					"type": "string"
+				},
+				"Date": {
+					"type": "string"
+				},
+				"Time": {
+					"type": "string"
+				},
+				"Payment": {
+					"type": "string"
+				},
+				"cogs": {
+					"type": "string"
+				},
+				"gross_margin_percentage": {
+					"type": "string"
+				},
+				"gross_income": {
+					"type": "string"
+				},
+				"Rating": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
