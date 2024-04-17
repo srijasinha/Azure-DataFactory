@@ -1,0 +1,9 @@
+{
+	"name": "SrijaAfdTutorial",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "df9d3805-251b-481b-84a2-af544e016ed8",
+		"tenantId": "9cda0186-a3b2-474b-9de8-6187cb4d0f34"
+	}
+}
