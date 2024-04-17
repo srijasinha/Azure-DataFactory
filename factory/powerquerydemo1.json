@@ -1,0 +1,9 @@
+{
+	"name": "powerquerydemo1",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b3ec54e3-beb1-4800-a54f-56e2d533137b",
+		"tenantId": "9cda0186-a3b2-474b-9de8-6187cb4d0f34"
+	}
+}
