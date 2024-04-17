@@ -1,0 +1,52 @@
+Project Explation- (IPRCTO )
+
+1)Intro - I have worked for D- decker product , it is related to curtains or fabric , used in interior of our homes and this product is related to supply chain and management of diffrent variety.
+
+2)Problem - The data we are getting from the source is raw data
+and I and my project focusing on how to make it credibale and hence maintain the supply chain. 
+
+3)Role - My role is on Data cleaning  and Reporting side, so working as BI developer.
+
+4)Contribution - As a developer first create end user document for all the things which we will be showing on dashboard. Then get raw data from source , then pull in any specefic ETL tool like SSIS , or Rdbms. After that quering only required field with basic transformation and finally pulling it in power bi wherewe are doing most of cleaning and transformations and analyzing it with the help of diffrent charts and visuals.
+
+5)Timeline - The project started 8 months ago and I am still working on this.
+
+6)Outcome - With the help of KPI 's shown on dashboard , we are able to manage the supply chain , showing the end users demand of diffrent products.
+
+
+PROJECT 2 - (AZURE DATA FACTORY)
+
+Requirement - 
+
+1)we have azure blob storage account where we are getting raw data (employee,department)in Json format.
+
+2)we need to create a pipeline and shedule on daily basis which will pic data from raw container to specefic employee and department container and we need to dump in CSV file.
+
+3)We need to create pipeline which will be able to join the employee and department file based on department id and need to store into emp - department container.
+
+4)We should able to save aggregrate information of total department wise employees salary and group by jobId.
+
+**Design and Development ***-
+
+Storage Blob account  has 4 container
+
+1)raw container -> (employee.json,-> all the employee fill will go to employee container in csv
+                   department.json) -> all the department file will go to department container in csv(create pipeline) step -1 & 2
+				   
+2)employee - employee.csv       join emp.csv and department.csv and store in emp -dept       container   (step -3) - creae Data Flow.
+3)department- department.csv
+4)emp-dept
+5)aggregrate - Afte join it will do agregation sum of salary and group by jobId,Department Name.(step4)
+
+Solution - 
+
+1)Go to raw container and serch for file - employee.json, and department.json.
+We have GetMetaData activity in Azure Dtaa FACTORY will give you all storage account information.
+
+2)Use For ech activity - To iterate on multiple file  and If condition 
+ If it is employee.json file then perform copy activity and  store in Employee container in csv format
+ else if it is department.json file then perform copy activitystore in Department container in csv format
+ 
+3)Use Dta Flow - once we get the csv file in employee and department container the will perform join , and store in emp-dept container.
+
+4)Aggration logic - We will perform a aggregation logic and store in aggregrate container.
