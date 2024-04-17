@@ -1,0 +1,91 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "project1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Invoice_ID",
+				"type": "String"
+			},
+			{
+				"name": "Branch",
+				"type": "String"
+			},
+			{
+				"name": "City",
+				"type": "String"
+			},
+			{
+				"name": "Customer_type",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "Product_line",
+				"type": "String"
+			},
+			{
+				"name": "Unit_price",
+				"type": "String"
+			},
+			{
+				"name": "Quantity",
+				"type": "String"
+			},
+			{
+				"name": "Tax_5",
+				"type": "String"
+			},
+			{
+				"name": "Total",
+				"type": "String"
+			},
+			{
+				"name": "Date",
+				"type": "String"
+			},
+			{
+				"name": "Time",
+				"type": "String"
+			},
+			{
+				"name": "Payment",
+				"type": "String"
+			},
+			{
+				"name": "cogs",
+				"type": "String"
+			},
+			{
+				"name": "gross_margin_percentage",
+				"type": "String"
+			},
+			{
+				"name": "gross_income",
+				"type": "String"
+			},
+			{
+				"name": "Rating",
+				"type": "String"
+			}
+		]
+	}
+}

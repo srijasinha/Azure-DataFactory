@@ -1,0 +1,46 @@
+{
+	"name": "PowerqueryTest",
+	"properties": {
+		"activities": [
+			{
+				"name": "powerquery",
+				"type": "ExecuteWranglingDataflow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "powerquery",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"queries": [
+						{
+							"queryName": "UserQuery",
+							"dataflowSinks": [
+								{
+									"name": "UserQueryDelimitedText1",
+									"dataset": {
+										"referenceName": "DelimitedText1",
+										"type": "DatasetReference"
+									},
+									"script": "sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tinput(\n\t\tInvoice_ID as string,\n\t\tBranch as string,\n\t\tCity as string,\n\t\tCustomer_type as string,\n\t\tGender as string,\n\t\tProduct_line as string,\n\t\tUnit_price as string,\n\t\tQuantity as string,\n\t\tTax_5 as string,\n\t\tTotal as string,\n\t\tDate as string,\n\t\tTime as string,\n\t\tPayment as string,\n\t\tcogs as string,\n\t\tgross_margin_percentage as string,\n\t\tgross_income as string,\n\t\tRating as string\n\t),\n\tpartitionFileNames:['Pq'],\n\ttruncate: true,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\tpartitionBy('hash', 1)) ~> UserQueryDelimitedText1"
+								}
+							]
+						}
+					]
+				}
+			}
+		],
+		"annotations": []
+	}
+}
