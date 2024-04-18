@@ -9,6 +9,10 @@
 				"pipelineReference": {
 					"referenceName": "copy data",
 					"type": "PipelineReference"
+				},
+				"parameters": {
+					"SourcePath": "@triggerBody().filePath",
+					"FilePath": "@triggerBody().fileName"
 				}
 			}
 		],

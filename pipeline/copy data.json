@@ -51,6 +51,14 @@
 				]
 			}
 		],
+		"parameters": {
+			"SourcePath": {
+				"type": "string"
+			},
+			"FilePath": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
