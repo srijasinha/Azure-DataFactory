@@ -12,7 +12,7 @@
 				},
 				"parameters": {
 					"SourcePath": "@triggerBody().filePath",
-					"FilePath": "@triggerBody().fileName"
+					"SourceFile": "@triggerBody().fileName"
 				}
 			}
 		],

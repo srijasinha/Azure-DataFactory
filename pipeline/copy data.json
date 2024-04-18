@@ -55,7 +55,7 @@
 			"SourcePath": {
 				"type": "string"
 			},
-			"FilePath": {
+			"SourceFile": {
 				"type": "string"
 			}
 		},
