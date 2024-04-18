@@ -1,0 +1,25 @@
+{
+	"name": "Tranfer data from 1 to 2 server",
+	"properties": {
+		"description": "Copy data from local server(1) to Azure Db server(2) by using self hosted.",
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"enableStaging": false
+				}
+			}
+		],
+		"annotations": []
+	}
+}
