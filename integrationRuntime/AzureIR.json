@@ -1,0 +1,19 @@
+{
+	"name": "AzureIR",
+	"properties": {
+		"type": "Managed",
+		"description": "This is temp Integration runtime.",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "Central India",
+				"dataFlowProperties": {
+					"computeType": "General",
+					"coreCount": 8,
+					"timeToLive": 10,
+					"cleanup": false,
+					"customProperties": []
+				}
+			}
+		}
+	}
+}
