@@ -14,7 +14,24 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "dbo.EmpDetails"
+					},
+					{
+						"name": "Destination",
+						"value": "dbo.Copy_EmpDetails"
+					},
+					{
+						"name": "Souce Type",
+						"value": "Azure sql"
+					},
+					{
+						"name": "Destination Type",
+						"value": "zure Sql"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
