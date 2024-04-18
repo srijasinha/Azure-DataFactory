@@ -38,13 +38,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "SourceEmployeeDetails",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlTable2",
+						"referenceName": "DestinationCopy_Emp_Details",
 						"type": "DatasetReference"
 					}
 				]
