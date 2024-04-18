@@ -1,7 +1,7 @@
 {
 	"name": "Tumbling_Trigger",
 	"properties": {
-		"description": "This is a tumbling  indow Trigger",
+		"description": "This is a tumbling Window Trigger and it can be scheduled for past date also.",
 		"annotations": [],
 		"runtimeState": "Started",
 		"pipeline": {
