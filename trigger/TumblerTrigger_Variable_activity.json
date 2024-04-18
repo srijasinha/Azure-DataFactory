@@ -1,0 +1,30 @@
+{
+	"name": "TumblerTrigger_Variable_activity",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipeline": {
+			"pipelineReference": {
+				"referenceName": "Tumble_Trigger",
+				"type": "PipelineReference"
+			},
+			"parameters": {
+				"start": "@trigeer().outputs.window.StartTime",
+				"end": "@trigeer().outputs.window.EndTime"
+			}
+		},
+		"type": "TumblingWindowTrigger",
+		"typeProperties": {
+			"frequency": "Minute",
+			"interval": 30,
+			"startTime": "2024-04-18T16:00:00Z",
+			"endTime": "2024-04-18T17:00:00Z",
+			"delay": "00:00:00",
+			"maxConcurrency": 50,
+			"retryPolicy": {
+				"intervalInSeconds": 30
+			},
+			"dependsOn": []
+		}
+	}
+}

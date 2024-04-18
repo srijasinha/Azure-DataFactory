@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Set variable1",
+				"name": "Start variable",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"policy": {
@@ -12,27 +12,45 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "",
-					"value": ""
+					"variableName": "starttime",
+					"value": {
+						"value": "@pipeline().parameters.start",
+						"type": "Expression"
+					}
 				}
 			},
 			{
-				"name": "Set variable2",
+				"name": "End variable",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"policy": {
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "endtime",
+					"value": {
+						"value": "@pipeline().parameters.end",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"parameters": {
-			"starttime": {
+			"start": {
 				"type": "string"
 			},
-			"endtime": {
+			"end": {
 				"type": "string"
+			}
+		},
+		"variables": {
+			"starttime": {
+				"type": "String"
+			},
+			"endtime": {
+				"type": "String"
 			}
 		},
 		"annotations": []
