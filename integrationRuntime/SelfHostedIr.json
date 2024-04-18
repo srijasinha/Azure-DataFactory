@@ -1,7 +1,0 @@
-{
-	"name": "SelfHostedIr",
-	"properties": {
-		"type": "SelfHosted",
-		"description": "This is self hosted Ir."
-	}
-}
