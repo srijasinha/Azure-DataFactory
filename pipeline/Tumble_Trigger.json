@@ -1,0 +1,40 @@
+{
+	"name": "Tumble_Trigger",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "",
+					"value": ""
+				}
+			},
+			{
+				"name": "Set variable2",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
+			}
+		],
+		"parameters": {
+			"starttime": {
+				"type": "string"
+			},
+			"endtime": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}
