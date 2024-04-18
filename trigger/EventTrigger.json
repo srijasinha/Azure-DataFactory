@@ -3,11 +3,11 @@
 	"properties": {
 		"description": "This is Event Trigger",
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "copy data",
+					"referenceName": "copy data_EventTrigger",
 					"type": "PipelineReference"
 				},
 				"parameters": {
