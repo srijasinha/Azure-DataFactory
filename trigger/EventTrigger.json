@@ -3,16 +3,12 @@
 	"properties": {
 		"description": "This is Event Trigger",
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
 					"referenceName": "copy data_EventTrigger",
 					"type": "PipelineReference"
-				},
-				"parameters": {
-					"SourcePath": "@triggerBody().filePath",
-					"SourceFile": "@triggerBody().fileName"
 				}
 			}
 		],
