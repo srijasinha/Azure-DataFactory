@@ -12,6 +12,7 @@
 		"connectVia": {
 			"referenceName": "integrationRuntime1",
 			"type": "IntegrationRuntimeReference"
-		}
+		},
+		"description": "This is Self hosted IR."
 	}
 }
