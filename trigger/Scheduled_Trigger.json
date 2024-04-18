@@ -1,5 +1,5 @@
 {
-	"name": "trigger_Data",
+	"name": "Scheduled_Trigger",
 	"properties": {
 		"description": "Copy Data",
 		"annotations": [],
