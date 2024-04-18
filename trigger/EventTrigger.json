@@ -18,7 +18,7 @@
 		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
-			"blobPathBeginsWith": "/adf/blobs/adf/input",
+			"blobPathBeginsWith": "/adf/blobs/adf/Input",
 			"blobPathEndsWith": ".txt",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/b6cbbd0f-3ac4-4c27-938d-23762b1a3804/resourceGroups/TestEnv/providers/Microsoft.Storage/storageAccounts/adftutorial",
