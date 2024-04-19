@@ -1,0 +1,85 @@
+{
+	"name": "Dynamic_DataSet_Azure_Sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dynamic_linked_azureSql",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"ServerName": "srija-uat.database.windows.net",
+				"UserId": "srija-uat",
+				"Password": "Iamgood@21",
+				"DatabaseName": "Hr"
+			}
+		},
+		"parameters": {
+			"TableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "emp_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "first_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "last_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "birthdate",
+				"type": "date"
+			},
+			{
+				"name": "gender",
+				"type": "nvarchar"
+			},
+			{
+				"name": "race",
+				"type": "nvarchar"
+			},
+			{
+				"name": "department",
+				"type": "nvarchar"
+			},
+			{
+				"name": "jobtitle",
+				"type": "nvarchar"
+			},
+			{
+				"name": "location",
+				"type": "nvarchar"
+			},
+			{
+				"name": "hire_date",
+				"type": "date"
+			},
+			{
+				"name": "termdate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "location_city",
+				"type": "nvarchar"
+			},
+			{
+				"name": "location_state",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Age",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Hr_Details"
+		}
+	}
+}
