@@ -55,7 +55,29 @@
 				"inputs": [
 					{
 						"referenceName": "Hr_Data",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"ServerName": {
+								"value": "@pipeline().parameters.ServerName",
+								"type": "Expression"
+							},
+							"DataBase": {
+								"value": "@pipeline().parameters.DataBase",
+								"type": "Expression"
+							},
+							"UserName": {
+								"value": "@pipeline().parameters.UserName",
+								"type": "Expression"
+							},
+							"Password": {
+								"value": "@pipeline().parameters.Password",
+								"type": "Expression"
+							},
+							"TableName": {
+								"value": "@pipeline().parameters.TableName",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
