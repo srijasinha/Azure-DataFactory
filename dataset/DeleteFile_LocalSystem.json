@@ -1,0 +1,17 @@
+{
+	"name": "DeleteFile_LocalSystem",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServerOperation",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "DeleteActivity.txt"
+			}
+		}
+	}
+}
