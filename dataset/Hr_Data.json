@@ -5,6 +5,23 @@
 			"referenceName": "Linkedservice_blob_storage",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"ServerName": {
+				"type": "string"
+			},
+			"Database": {
+				"type": "string"
+			},
+			"UserName": {
+				"type": "string"
+			},
+			"Password": {
+				"type": "string"
+			},
+			"TableName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
