@@ -78,7 +78,10 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "dbo",
+			"schema": {
+				"value": "@dataset().TableName",
+				"type": "Expression"
+			},
 			"table": "Hr_Details"
 		}
 	}
