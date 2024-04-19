@@ -90,11 +90,11 @@
 			}
 		],
 		"typeProperties": {
-			"schema": {
+			"schema": "dbo",
+			"table": {
 				"value": "@dataset().TableName",
 				"type": "Expression"
-			},
-			"table": "Hr_Details"
+			}
 		}
 	}
 }
