@@ -1,0 +1,7 @@
+{
+	"name": "Dynamic_load_data",
+	"properties": {
+		"description": "upload hr_data.txt file from blob storage to azure sql server(UAT,DEV)",
+		"annotations": []
+	}
+}
