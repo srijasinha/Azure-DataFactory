@@ -2,11 +2,24 @@
 	"name": "dynamic_linked_azureSql",
 	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
+		"parameters": {
+			"ServerName": {
+				"type": "string"
+			},
+			"UserId": {
+				"type": "string"
+			},
+			"Password": {
+				"type": "string"
+			},
+			"DatabaseName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
-			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=srija-dev.database.windows.net;initial catalog=Hr;user id=srija-dev",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDcwRDAxNTRBLUM0MkUtNDU3MS1BMjQzLTlDQTZENEJFRjRBN181YjgzYzhmOC0xMjRmLTRjYWUtOWM5NC0yMTgwYzA0N2ViMzciDQp9"
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=@{linkedService().ServerName};Initial Catalog=@{linkedService().DatabaseName};User ID=@{linkedService().UserId};Password=@{linkedService().Password}"
 		}
 	}
 }
