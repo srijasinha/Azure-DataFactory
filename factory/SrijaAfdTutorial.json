@@ -1,5 +1,10 @@
 {
 	"name": "SrijaAfdTutorial",
+	"properties": {
+		"globalConfigurations": {
+			"PolicyValidationEnabled": "true"
+		}
+	},
 	"location": "eastus",
 	"identity": {
 		"type": "SystemAssigned",
