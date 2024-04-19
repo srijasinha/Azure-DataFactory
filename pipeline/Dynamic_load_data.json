@@ -4,7 +4,7 @@
 		"description": "upload hr_data.txt file from blob storage to azure sql server(UAT,DEV)",
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Load data in dinnefrent server",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
