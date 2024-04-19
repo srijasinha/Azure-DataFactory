@@ -7,7 +7,7 @@
 		"typeProperties": {
 			"connectionString": "integrated security=True;data source=CHNMCT331602L\\SQLEXPRESS;initial catalog=Hr",
 			"userName": "ITLINFOSYS\\srija.sinha",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1NjAxOGRhZi1jOTAxLTQzNGYtYWM0MC1kYWE5ZmJjYjNmZjEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI5OWJmZmNmMC1kYTM5LTQ5OGYtOTM2ZS0zYzI0NzJlZDBkZGUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "SelfHostedIR",
