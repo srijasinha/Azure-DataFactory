@@ -1,0 +1,27 @@
+{
+	"name": "File",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "DeleteActivity.txt"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "This is a delete file from local system Demo",
+				"type": "String"
+			}
+		]
+	}
+}
