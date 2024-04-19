@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "DeleteFile_on_local",
+						"referenceName": "DeleteFileOnLocal",
 						"type": "DatasetReference"
 					},
 					"logStorageSettings": {
