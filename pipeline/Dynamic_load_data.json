@@ -44,7 +44,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Hr_Data",
+						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					}
 				],
