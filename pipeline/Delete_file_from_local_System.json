@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Delete1",
+				"name": "DeleteFile_From_local",
 				"type": "Delete",
 				"dependsOn": [],
 				"policy": {
