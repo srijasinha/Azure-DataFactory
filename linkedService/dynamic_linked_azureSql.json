@@ -4,16 +4,20 @@
 	"properties": {
 		"parameters": {
 			"ServerName": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "srija-uat.database.windows.net"
 			},
 			"UserId": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "srija-uat"
 			},
 			"Password": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "Iamgood@21"
 			},
 			"DatabaseName": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "Hr"
 			}
 		},
 		"annotations": [],
