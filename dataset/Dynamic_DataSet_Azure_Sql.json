@@ -14,6 +14,18 @@
 		"parameters": {
 			"TableName": {
 				"type": "string"
+			},
+			"ServerName": {
+				"type": "string"
+			},
+			"UserName": {
+				"type": "string"
+			},
+			"Password": {
+				"type": "string"
+			},
+			"Database": {
+				"type": "string"
 			}
 		},
 		"annotations": [],

@@ -42,7 +42,29 @@
 				"outputs": [
 					{
 						"referenceName": "Dynamic_DataSet_Azure_Sql",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"TableName": {
+								"value": "@pipeline().parameters.TableName",
+								"type": "Expression"
+							},
+							"ServerName": {
+								"value": "@pipeline().parameters.ServerName",
+								"type": "Expression"
+							},
+							"UserName": {
+								"value": "@pipeline().parameters.UserName",
+								"type": "Expression"
+							},
+							"Password": {
+								"value": "@pipeline().parameters.Password",
+								"type": "Expression"
+							},
+							"Database": {
+								"value": "@pipeline().parameters.DataBase",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
