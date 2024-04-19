@@ -2,7 +2,7 @@
 	"name": "SrijaAfdTutorial",
 	"properties": {
 		"globalConfigurations": {
-			"PolicyValidationEnabled": "true"
+			"PolicyValidationEnabled": "false"
 		}
 	},
 	"location": "eastus",
