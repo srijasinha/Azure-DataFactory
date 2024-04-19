@@ -1,0 +1,17 @@
+{
+	"name": "DeleteFile_ON_Local",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\Users\\srija.sinha\\Downloads\\",
+			"userId": "ITLINFOSYS\\srija.sinha",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIzM2U3YWFmNy02Mzc5LTQ0ZGYtODcxNC0wMDYwODVkY2U0ZmIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
