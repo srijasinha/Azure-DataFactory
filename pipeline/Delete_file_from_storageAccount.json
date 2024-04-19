@@ -1,5 +1,5 @@
 {
-	"name": "DeleteActivity",
+	"name": "Delete_file_from_storageAccount",
 	"properties": {
 		"activities": [
 			{
