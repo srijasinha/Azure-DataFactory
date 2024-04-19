@@ -7,7 +7,7 @@
 		"typeProperties": {
 			"host": "C:\\Users\\srija.sinha\\Downloads\\Delete\\",
 			"userId": "ITLINFOSYS\\srija.sinha",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2MTgzYTIwNi1hZGIwLTRkNmQtYjliNS0wYmYzZDk1NzdiZDciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2M2QxNTUwNS01YzQ0LTQ0ZDUtYjc3Ny1hNGY5ODg5MjM2ZjUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "SelfHostedIR",
