@@ -1,0 +1,80 @@
+{
+	"name": "Hr_Data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Linkedservice_blob_storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Hr_Data.csv",
+				"container": "adf"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "emp_id",
+				"type": "String"
+			},
+			{
+				"name": "first_name",
+				"type": "String"
+			},
+			{
+				"name": "last_name",
+				"type": "String"
+			},
+			{
+				"name": "birthdate",
+				"type": "String"
+			},
+			{
+				"name": "gender",
+				"type": "String"
+			},
+			{
+				"name": "race",
+				"type": "String"
+			},
+			{
+				"name": "department",
+				"type": "String"
+			},
+			{
+				"name": "jobtitle",
+				"type": "String"
+			},
+			{
+				"name": "location",
+				"type": "String"
+			},
+			{
+				"name": "hire_date",
+				"type": "String"
+			},
+			{
+				"name": "termdate",
+				"type": "String"
+			},
+			{
+				"name": "location_city",
+				"type": "String"
+			},
+			{
+				"name": "location_state",
+				"type": "String"
+			},
+			{
+				"name": "Age",
+				"type": "String"
+			}
+		]
+	}
+}
