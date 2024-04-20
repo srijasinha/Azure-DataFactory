@@ -129,16 +129,79 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "sp_logging_Details"
+					"storedProcedureName": "[dbo].[sp_logging_Details]",
+					"storedProcedureParameters": {
+						"Dbname": {
+							"value": {
+								"value": "@pipeline().parameters.DataBase",
+								"type": "Expression"
+							},
+							"type": "String"
+						},
+						"Pipeline": {
+							"value": {
+								"value": "@pipeline().Pipeline",
+								"type": "Expression"
+							},
+							"type": "String"
+						},
+						"RunEnddt": {
+							"value": {
+								"value": "@pipeline().TriggerTime",
+								"type": "Expression"
+							},
+							"type": "DateTime"
+						},
+						"RunId": {
+							"value": {
+								"value": "@pipeline().RunId",
+								"type": "Expression"
+							},
+							"type": "String"
+						},
+						"RunStartdt": {
+							"value": {
+								"value": "@pipeline().TriggerTime",
+								"type": "Expression"
+							},
+							"type": "DateTime"
+						},
+						"ServerName": {
+							"value": {
+								"value": "@pipeline().parameters.ServerName",
+								"type": "Expression"
+							},
+							"type": "String"
+						},
+						"TriggerType": {
+							"value": {
+								"value": "@pipeline().TriggerType",
+								"type": "Expression"
+							},
+							"type": "String"
+						}
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "dynamic_linked_azureSql",
 					"type": "LinkedServiceReference",
 					"parameters": {
-						"ServerName": "srija-uat.database.windows.net",
-						"UserId": "srija-uat",
-						"Password": "Iamgood@21",
-						"DatabaseName": "Hr"
+						"ServerName": {
+							"value": "@pipeline().parameters.ServerName",
+							"type": "Expression"
+						},
+						"UserId": {
+							"value": "@pipeline().parameters.UserName",
+							"type": "Expression"
+						},
+						"Password": {
+							"value": "@pipeline().parameters.Password",
+							"type": "Expression"
+						},
+						"DatabaseName": {
+							"value": "@pipeline().parameters.DataBase",
+							"type": "Expression"
+						}
 					}
 				}
 			}
