@@ -129,8 +129,14 @@
 				},
 				"userProperties": [],
 				"linkedServiceName": {
-					"referenceName": "AzureSql_hr_Database",
-					"type": "LinkedServiceReference"
+					"referenceName": "dynamic_linked_azureSql",
+					"type": "LinkedServiceReference",
+					"parameters": {
+						"ServerName": "srija-uat.database.windows.net",
+						"UserId": "srija-uat",
+						"Password": "Iamgood@21",
+						"DatabaseName": "Hr"
+					}
 				}
 			}
 		],
