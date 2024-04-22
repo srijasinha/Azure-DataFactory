@@ -31,7 +31,14 @@
 				"name": "Set emp_id",
 				"description": "retrieveretrive a specefic column from DB",
 				"type": "SetVariable",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Lookup Activity",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"secureOutput": false,
 					"secureInput": false
