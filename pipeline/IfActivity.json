@@ -12,6 +12,17 @@
 						"value": "@contains(pipeline().parameters.pvalue,'customer')",
 						"type": "Expression"
 					},
+					"ifFalseActivities": [
+						{
+							"name": "False Wait",
+							"type": "Wait",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"waitTimeInSeconds": 5
+							}
+						}
+					],
 					"ifTrueActivities": [
 						{
 							"name": "True Wait",
