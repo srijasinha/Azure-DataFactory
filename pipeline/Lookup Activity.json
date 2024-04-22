@@ -53,6 +53,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"Age": {
+				"type": "string"
+			}
+		},
 		"variables": {
 			"Age": {
 				"type": "Integer"
