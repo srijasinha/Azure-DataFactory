@@ -1,0 +1,40 @@
+{
+	"name": "IfActivity",
+	"properties": {
+		"activities": [
+			{
+				"name": "If Condition",
+				"type": "IfCondition",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "@contains(pipeline().parameters.pvalue,'customer')",
+						"type": "Expression"
+					},
+					"ifTrueActivities": [
+						{
+							"name": "True Wait",
+							"description": "True condition runns",
+							"type": "Wait",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"waitTimeInSeconds": 10
+							}
+						}
+					]
+				}
+			}
+		],
+		"parameters": {
+			"pvalue": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "Activities"
+		},
+		"annotations": []
+	}
+}
