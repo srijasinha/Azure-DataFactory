@@ -28,8 +28,8 @@
 				}
 			},
 			{
-				"name": "Set emp_id",
-				"description": "retrieveretrive a specefic column from DB",
+				"name": "Set Age",
+				"description": "retrieve a specefic column from DB",
 				"type": "SetVariable",
 				"dependsOn": [
 					{
@@ -45,17 +45,30 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "Employee Id",
+					"variableName": "Age",
 					"value": {
-						"value": "@activity('Lookup Activity').output.firstRow.Emp_Id",
+						"value": "@activity('Lookup Activity').output.firstRow.Age",
 						"type": "Expression"
 					}
 				}
+			},
+			{
+				"name": "If Condition",
+				"type": "IfCondition",
+				"dependsOn": [
+					{
+						"activity": "Set Age",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": []
 			}
 		],
 		"variables": {
-			"Employee Id": {
-				"type": "String"
+			"Age": {
+				"type": "Integer"
 			}
 		},
 		"folder": {
