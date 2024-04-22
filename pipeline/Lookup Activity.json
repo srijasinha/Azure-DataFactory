@@ -28,7 +28,8 @@
 				}
 			},
 			{
-				"name": "Set variable1",
+				"name": "Set emp_id",
+				"description": "retrieveretrive a specefic column from DB",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"policy": {
@@ -38,6 +39,11 @@
 				"userProperties": []
 			}
 		],
+		"variables": {
+			"Employee Id": {
+				"type": "Integer"
+			}
+		},
 		"folder": {
 			"name": "Activities"
 		},
