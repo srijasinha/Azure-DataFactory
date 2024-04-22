@@ -34,26 +34,13 @@
 				}
 			},
 			{
-				"name": "True",
-				"type": "IfCondition",
-				"dependsOn": [
-					{
-						"activity": "If Condition2",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"userProperties": []
-			},
-			{
 				"name": "If Condition4",
 				"type": "IfCondition",
 				"dependsOn": [
 					{
-						"activity": "True",
+						"activity": "If Condition1",
 						"dependencyConditions": [
-							"Succeeded"
+							"Completed"
 						]
 					}
 				],
@@ -64,6 +51,19 @@
 						"type": "Expression"
 					}
 				}
+			},
+			{
+				"name": "If Condition3",
+				"type": "IfCondition",
+				"dependsOn": [
+					{
+						"activity": "If Condition1",
+						"dependencyConditions": [
+							"Failed"
+						]
+					}
+				],
+				"userProperties": []
 			}
 		],
 		"annotations": []
