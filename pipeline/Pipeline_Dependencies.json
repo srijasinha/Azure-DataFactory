@@ -63,7 +63,25 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "True\n",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "If Condition5",
+				"type": "IfCondition",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "True\n",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"annotations": []
