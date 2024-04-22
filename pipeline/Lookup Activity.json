@@ -36,7 +36,11 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Employee Id",
+					"value": ""
+				}
 			}
 		],
 		"variables": {
