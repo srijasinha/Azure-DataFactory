@@ -51,19 +51,6 @@
 						"type": "Expression"
 					}
 				}
-			},
-			{
-				"name": "If Condition",
-				"type": "IfCondition",
-				"dependsOn": [
-					{
-						"activity": "Set Age",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"userProperties": []
 			}
 		],
 		"variables": {
