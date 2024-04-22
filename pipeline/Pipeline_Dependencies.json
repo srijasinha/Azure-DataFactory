@@ -74,7 +74,14 @@
 			{
 				"name": "If Condition5",
 				"type": "IfCondition",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "If Condition3",
+						"dependencyConditions": [
+							"Skipped"
+						]
+					}
+				],
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
