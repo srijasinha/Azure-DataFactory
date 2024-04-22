@@ -55,7 +55,7 @@
 		],
 		"variables": {
 			"Employee Id": {
-				"type": "Integer"
+				"type": "String"
 			}
 		},
 		"folder": {
