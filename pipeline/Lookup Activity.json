@@ -282,7 +282,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "Dynamic_DataSet_Azure_Sql",
+									"referenceName": "AzureSqlTable1",
 									"type": "DatasetReference"
 								}
 							]
