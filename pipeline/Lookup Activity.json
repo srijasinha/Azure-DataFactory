@@ -46,7 +46,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "Employee Id",
-					"value": ""
+					"value": {
+						"value": "@activity('Lookup Activity').output.firstRow.Emp_Id",
+						"type": "Expression"
+					}
 				}
 			}
 		],
