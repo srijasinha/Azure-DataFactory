@@ -223,6 +223,11 @@
 				"type": "string"
 			}
 		},
+		"variables": {
+			"ServerName": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
