@@ -1,5 +1,5 @@
 {
-	"name": "MetaData  and Filter Activity",
+	"name": "MetaData Filter  and Foreach Activity",
 	"properties": {
 		"activities": [
 			{
@@ -24,6 +24,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -75,6 +76,44 @@
 					},
 					"condition": {
 						"value": "@contains(item().name,'Sales')",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "ForEach customer",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Customer",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Customer').output",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "ForEach Sales",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Sales",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Sales').output",
 						"type": "Expression"
 					}
 				}
