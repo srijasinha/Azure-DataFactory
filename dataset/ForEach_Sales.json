@@ -3,7 +3,18 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "dynamic_linked_azureSql",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"ServerName": "srija-test.database.windows.net",
+				"UserId": "srija",
+				"Password": "Iamgood@21",
+				"DatabaseName": "Hr"
+			}
+		},
+		"parameters": {
+			"FileName": {
+				"type": "string"
+			}
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
