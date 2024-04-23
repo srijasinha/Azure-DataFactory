@@ -173,7 +173,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('SalesFor each').output",
+						"value": "@activity('Sales').output",
 						"type": "Expression"
 					},
 					"activities": [
