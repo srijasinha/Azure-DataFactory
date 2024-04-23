@@ -191,9 +191,15 @@
 							"userProperties": [],
 							"typeProperties": {
 								"source": {
-									"type": "AzureSqlSource",
-									"queryTimeout": "02:00:00",
-									"partitionOption": "None"
+									"type": "DelimitedTextSource",
+									"storeSettings": {
+										"type": "AzureBlobStorageReadSettings",
+										"recursive": true,
+										"enablePartitionDiscovery": false
+									},
+									"formatSettings": {
+										"type": "DelimitedTextReadSettings"
+									}
 								},
 								"sink": {
 									"type": "AzureSqlSink",
@@ -212,14 +218,8 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "ForEach_Sales",
-									"type": "DatasetReference",
-									"parameters": {
-										"FileName": {
-											"value": "@item().name",
-											"type": "Expression"
-										}
-									}
+									"referenceName": "ForEachSales",
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
