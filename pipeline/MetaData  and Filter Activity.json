@@ -70,11 +70,11 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@contains(item().name, 'Sales')",
+						"value": "@activity('Getinf sales and customer info').output.childItems",
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@activity('Getinf sales and customer info').output.childItems",
+						"value": "@contains(item().name,'Sales')",
 						"type": "Expression"
 					}
 				}
