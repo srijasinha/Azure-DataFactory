@@ -54,6 +54,30 @@
 						"type": "Expression"
 					}
 				}
+			},
+			{
+				"name": "Sales",
+				"description": "Files sales files",
+				"type": "Filter",
+				"dependsOn": [
+					{
+						"activity": "Getinf sales and customer info",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@contains(item().name, 'Sales')",
+						"type": "Expression"
+					},
+					"condition": {
+						"value": "@activity('Getinf sales and customer info').output.childItems",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"folder": {
