@@ -32,7 +32,8 @@
 				}
 			},
 			{
-				"name": "Filter",
+				"name": "Customer",
+				"description": "Filter customer files",
 				"type": "Filter",
 				"dependsOn": [
 					{
@@ -42,7 +43,17 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Getinf sales and customer info').output.childItems",
+						"type": "Expression"
+					},
+					"condition": {
+						"value": "@contains(item().name, 'customer')",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"folder": {
