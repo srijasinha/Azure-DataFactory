@@ -109,13 +109,22 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": [],
+							"userProperties": [
+								{
+									"name": "Source",
+									"value": "adf/MetaData/@{item().name}"
+								},
+								{
+									"name": "Destination",
+									"value": "dbo.CustomerInfo"
+								}
+							],
 							"typeProperties": {
 								"source": {
 									"type": "DelimitedTextSource",
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
-										"recursive": true,
+										"fileListPath": "adf/MetaData",
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
