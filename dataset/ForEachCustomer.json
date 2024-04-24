@@ -29,27 +29,23 @@
 		},
 		"schema": [
 			{
-				"name": "SId",
+				"name": "CustomerNameCity",
 				"type": "String"
 			},
 			{
-				"name": "Date",
+				"name": "MObile No",
 				"type": "String"
 			},
 			{
-				"name": "City",
-				"type": "String"
-			},
-			{
-				"name": "Quantity",
-				"type": "String"
-			},
-			{
-				"name": "Item",
+				"name": "Active",
 				"type": "String"
 			},
 			{
 				"name": "CustomerId",
+				"type": "String"
+			},
+			{
+				"name": "Subscribtion",
 				"type": "String"
 			}
 		]
