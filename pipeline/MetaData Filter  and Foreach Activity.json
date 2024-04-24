@@ -94,7 +94,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Customer').output.childitems",
+						"value": "@activity('Customer').output",
 						"type": "Expression"
 					},
 					"activities": [
@@ -173,7 +173,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Sales').output.childitems",
+						"value": "@activity('Sales').output",
 						"type": "Expression"
 					},
 					"activities": [
