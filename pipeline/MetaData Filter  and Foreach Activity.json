@@ -124,7 +124,10 @@
 									"type": "DelimitedTextSource",
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
-										"fileListPath": "adf/MetaData",
+										"fileListPath": {
+											"value": "@activity('Customer').output",
+											"type": "Expression"
+										},
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
