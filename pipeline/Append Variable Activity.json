@@ -99,8 +99,10 @@
 				]
 			},
 			"FileName": {
-				"type": "String",
-				"defaultValue": "['ok']"
+				"type": "Array",
+				"defaultValue": [
+					"['ok']"
+				]
 			}
 		},
 		"folder": {
