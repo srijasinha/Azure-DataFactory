@@ -93,10 +93,14 @@
 		],
 		"variables": {
 			"FileList": {
-				"type": "Array"
+				"type": "Array",
+				"defaultValue": [
+					"['cat','dog']"
+				]
 			},
 			"FileName": {
-				"type": "String"
+				"type": "String",
+				"defaultValue": "['ok']"
 			}
 		},
 		"folder": {
