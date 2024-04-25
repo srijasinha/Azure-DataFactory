@@ -95,13 +95,14 @@
 			"FileList": {
 				"type": "Array",
 				"defaultValue": [
-					"['cat','dog']"
+					"cat",
+					"dog"
 				]
 			},
 			"FileName": {
 				"type": "Array",
 				"defaultValue": [
-					"['ok']"
+					"ok"
 				]
 			}
 		},
