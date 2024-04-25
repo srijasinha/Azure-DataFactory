@@ -173,6 +173,58 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "CustomerName",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CustomerName"
+								}
+							},
+							{
+								"source": {
+									"name": "Mobile No",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Mobile No"
+								}
+							},
+							{
+								"source": {
+									"name": "Active",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Active"
+								}
+							},
+							{
+								"source": {
+									"name": "CustomerId",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CustomerId"
+								}
+							},
+							{
+								"source": {
+									"name": "Subscribtion",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Subscribtion"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
