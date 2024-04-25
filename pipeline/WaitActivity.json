@@ -38,7 +38,9 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "CustomerName"
+									"name": "CustomerName",
+									"type": "String",
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "CustomerName",
@@ -48,7 +50,7 @@
 							},
 							{
 								"source": {
-									"name": "MObile No",
+									"name": "Mobile No",
 									"type": "String",
 									"physicalType": "String"
 								},
