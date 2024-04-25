@@ -20,10 +20,6 @@
 				"precision": 10
 			},
 			{
-				"name": "Date",
-				"type": "date"
-			},
-			{
 				"name": "City",
 				"type": "varchar"
 			},
