@@ -204,11 +204,7 @@
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false,
-							"dateFormat": {
-								"value": "@formatDateTime('Date')",
-								"type": "Expression"
-							}
+							"treatBooleanAsNumber": false
 						}
 					}
 				},
