@@ -90,17 +90,9 @@
 				}
 			}
 		],
-		"parameters": {
-			"FileList": {
-				"type": "array"
-			},
-			"FileName": {
-				"type": "array"
-			}
-		},
 		"variables": {
 			"FileList": {
-				"type": "Array"
+				"type": "String"
 			},
 			"FileName": {
 				"type": "Array"
