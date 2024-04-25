@@ -70,7 +70,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "sales_db_foreach",
+						"referenceName": "Validation_copy_salesData",
 						"type": "DatasetReference"
 					}
 				]
