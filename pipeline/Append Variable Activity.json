@@ -104,17 +104,10 @@
 		},
 		"variables": {
 			"FileList": {
-				"type": "Array",
-				"defaultValue": [
-					"cat",
-					"dog"
-				]
+				"type": "Array"
 			},
 			"FileName": {
-				"type": "Array",
-				"defaultValue": [
-					"ok"
-				]
+				"type": "Array"
 			}
 		},
 		"folder": {
