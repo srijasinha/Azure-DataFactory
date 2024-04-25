@@ -5,10 +5,10 @@
 			"referenceName": "dynamic_linked_azureSql",
 			"type": "LinkedServiceReference",
 			"parameters": {
-				"ServerName": "srija-uat.database.windows.net",
-				"UserId": "srija-uat",
+				"ServerName": "srija-test.database.windows.net",
+				"UserId": "srija",
 				"Password": "Iamgood@21",
-				"DatabaseName": "Hr"
+				"DatabaseName": "customer"
 			}
 		},
 		"annotations": [],
