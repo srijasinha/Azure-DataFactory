@@ -56,7 +56,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"on": {
-									"value": "@substring(item(),0, 3)",
+									"value": "@substring(item().name,0, 3)",
 									"type": "Expression"
 								},
 								"cases": [
