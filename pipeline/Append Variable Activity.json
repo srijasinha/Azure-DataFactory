@@ -91,6 +91,14 @@
 				}
 			}
 		],
+		"parameters": {
+			"Var": {
+				"type": "array",
+				"defaultValue": [
+					1
+				]
+			}
+		},
 		"variables": {
 			"FileList": {
 				"type": "Array",
