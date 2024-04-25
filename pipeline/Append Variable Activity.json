@@ -94,7 +94,12 @@
 		"parameters": {
 			"Var": {
 				"type": "array",
-				"defaultValue": "[\"Sales_India.csv\",\"Sales_Us.csv\",\"customer_India.csv\",\"customer_Us.csv\""
+				"defaultValue": [
+					"Sales_India.csv",
+					"Sales_Us.csv",
+					"customer_India.csv",
+					"customer_Us.csv"
+				]
 			}
 		},
 		"variables": {
