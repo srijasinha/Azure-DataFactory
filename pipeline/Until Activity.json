@@ -3,59 +3,25 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Wait",
-				"description": "Wait for 10 sec to exevute Metadata Info",
-				"type": "Wait",
+				"name": "Until",
+				"type": "Until",
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
-					"waitTimeInSeconds": 10
-				}
-			},
-			{
-				"name": "Get Metadata",
-				"description": "Information of sales_India file.",
-				"type": "GetMetadata",
-				"dependsOn": [
-					{
-						"activity": "Wait",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"dataset": {
-						"referenceName": "Sales_IndiaData",
-						"type": "DatasetReference"
+					"expression": {
+						"value": "@bool(variables('Status'))",
+						"type": "Expression"
 					},
-					"fieldList": [
-						"itemName"
-					],
-					"storeSettings": {
-						"type": "AzureBlobStorageReadSettings",
-						"enablePartitionDiscovery": false
-					},
-					"formatSettings": {
-						"type": "DelimitedTextReadSettings"
-					}
+					"timeout": "0.12:00:00"
 				}
-			},
-			{
-				"name": "If Condition1",
-				"type": "IfCondition",
-				"dependsOn": [],
-				"userProperties": []
 			}
 		],
+		"variables": {
+			"Status": {
+				"type": "String",
+				"defaultValue": "False"
+			}
+		},
 		"folder": {
 			"name": "Activities"
 		},
