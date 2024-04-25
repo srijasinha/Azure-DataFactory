@@ -75,7 +75,18 @@
 										]
 									},
 									{
-										"value": "Sales_Blob"
+										"value": "Sales_Blob",
+										"activities": [
+											{
+												"name": "Wait-salesData",
+												"type": "Wait",
+												"dependsOn": [],
+												"userProperties": [],
+												"typeProperties": {
+													"waitTimeInSeconds": 5
+												}
+											}
+										]
 									}
 								]
 							}
