@@ -30,6 +30,58 @@
 						"type": "DelimitedTextReadSettings"
 					}
 				}
+			},
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Get Metadata",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Get Metadata').output.childItems",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Switch",
+							"type": "Switch",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"on": {
+									"value": "@substring(item(),0, 3)",
+									"type": "Expression"
+								},
+								"cases": [
+									{
+										"value": "Customer_Blob",
+										"activities": [
+											{
+												"name": "Wait_customeerData",
+												"type": "Wait",
+												"dependsOn": [],
+												"userProperties": [],
+												"typeProperties": {
+													"waitTimeInSeconds": 5
+												}
+											}
+										]
+									},
+									{
+										"value": "Sales_Blob"
+									}
+								]
+							}
+						}
+					]
+				}
 			}
 		],
 		"folder": {
