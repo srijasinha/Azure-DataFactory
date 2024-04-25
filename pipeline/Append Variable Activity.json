@@ -93,7 +93,7 @@
 		],
 		"variables": {
 			"FileList": {
-				"type": "String"
+				"type": "Array"
 			},
 			"FileName": {
 				"type": "String"
