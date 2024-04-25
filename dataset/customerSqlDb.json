@@ -2,7 +2,7 @@
 	"name": "customerSqlDb",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "dynamic_linked_azureSql",
+			"referenceName": "AzureSqlDatabase2",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
