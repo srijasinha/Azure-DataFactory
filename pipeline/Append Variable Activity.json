@@ -95,7 +95,13 @@
 			"Var": {
 				"type": "array",
 				"defaultValue": [
-					1
+					"ok"
+				]
+			},
+			"Var2": {
+				"type": "array",
+				"defaultValue": [
+					"hi"
 				]
 			}
 		},
