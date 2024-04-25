@@ -1,0 +1,46 @@
+{
+	"name": "SalesData_untilActivity",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dynamic_linked_azureSql",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"ServerName": "srija-uat.database.windows.net",
+				"UserId": "srija-uat",
+				"Password": "Iamgood@21",
+				"DatabaseName": "Hr"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SId",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Date",
+				"type": "date"
+			},
+			{
+				"name": "City",
+				"type": "varchar"
+			},
+			{
+				"name": "Quantity",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CustomerId",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "SalesInfo"
+		}
+	}
+}
