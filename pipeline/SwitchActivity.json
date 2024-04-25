@@ -61,7 +61,7 @@
 								},
 								"cases": [
 									{
-										"value": "\"Customer_Blob\"",
+										"value": "Cus",
 										"activities": [
 											{
 												"name": "Wait_customeerData",
@@ -75,7 +75,7 @@
 										]
 									},
 									{
-										"value": "Sales_Blob",
+										"value": "Sal",
 										"activities": [
 											{
 												"name": "Wait-salesData",
