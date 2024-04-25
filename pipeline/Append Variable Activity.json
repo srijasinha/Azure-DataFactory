@@ -58,7 +58,7 @@
 							"typeProperties": {
 								"variableName": "FileList",
 								"value": {
-									"value": "@item().name.childItems",
+									"value": "@item().name",
 									"type": "Expression"
 								}
 							}
@@ -82,7 +82,7 @@
 							"typeProperties": {
 								"variableName": "FileName",
 								"value": {
-									"value": "@item()",
+									"value": "@variables('FileList')",
 									"type": "Expression"
 								}
 							}
