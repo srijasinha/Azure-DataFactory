@@ -45,7 +45,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Get Metadata').output.childItems",
+						"value": "@activity('Get Metadata').output",
 						"type": "Expression"
 					},
 					"activities": [
@@ -58,6 +58,30 @@
 								"variableName": "FileList",
 								"value": {
 									"value": "@item().name.childItems",
+									"type": "Expression"
+								}
+							}
+						},
+						{
+							"name": "Set variable",
+							"type": "SetVariable",
+							"dependsOn": [
+								{
+									"activity": "Append variable",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"policy": {
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "FileName",
+								"value": {
+									"value": "@variables('FileList')",
 									"type": "Expression"
 								}
 							}
