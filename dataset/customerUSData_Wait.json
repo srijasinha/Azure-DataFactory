@@ -1,0 +1,45 @@
+{
+	"name": "customerUSData_Wait",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MetaDataDemo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "customer_Us.csv",
+				"folderPath": "MetaData",
+				"container": "adf"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "CustomerNameCity",
+				"type": "String"
+			},
+			{
+				"name": "MObile No",
+				"type": "String"
+			},
+			{
+				"name": "Active",
+				"type": "String"
+			},
+			{
+				"name": "CustomerId",
+				"type": "String"
+			},
+			{
+				"name": "Subscribtion",
+				"type": "String"
+			}
+		]
+	}
+}
