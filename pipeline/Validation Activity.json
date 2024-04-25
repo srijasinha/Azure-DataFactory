@@ -9,7 +9,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "SalesData_untilActivity",
+						"referenceName": "Sales_IndiaData",
 						"type": "DatasetReference"
 					},
 					"timeout": "0.12:00:00",
