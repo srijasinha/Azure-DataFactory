@@ -3,7 +3,8 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Copy data",
+				"description": "copy data of customer_india in customer table in test environment",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -59,7 +60,7 @@
 				"type": "Wait",
 				"dependsOn": [
 					{
-						"activity": "Copy data1",
+						"activity": "Copy data",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -71,7 +72,8 @@
 				}
 			},
 			{
-				"name": "Copy data2",
+				"name": "Copy data1",
+				"description": "copy data of customer_us  in customer table in test environment",
 				"type": "Copy",
 				"dependsOn": [
 					{
