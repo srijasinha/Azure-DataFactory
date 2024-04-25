@@ -12,6 +12,100 @@
 						"value": "@bool(variables('Status'))",
 						"type": "Expression"
 					},
+					"activities": [
+						{
+							"name": "Wait",
+							"description": "Wait for 10 sec to exevute Metadata Info",
+							"type": "Wait",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"waitTimeInSeconds": 10
+							}
+						},
+						{
+							"name": "Get Metadata",
+							"description": "Information of sales_India file.",
+							"type": "GetMetadata",
+							"dependsOn": [
+								{
+									"activity": "Wait",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"dataset": {
+									"referenceName": "Sales_IndiaData",
+									"type": "DatasetReference"
+								},
+								"fieldList": [
+									"exists"
+								],
+								"storeSettings": {
+									"type": "AzureBlobStorageReadSettings",
+									"enablePartitionDiscovery": false
+								},
+								"formatSettings": {
+									"type": "DelimitedTextReadSettings"
+								}
+							}
+						},
+						{
+							"name": "If Condition",
+							"type": "IfCondition",
+							"dependsOn": [
+								{
+									"activity": "Get Metadata",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"userProperties": [],
+							"typeProperties": {
+								"expression": {
+									"value": "@bool(activity('Get Metadata').output.exists)",
+									"type": "Expression"
+								},
+								"ifTrueActivities": [
+									{
+										"name": "Set variable",
+										"description": "If the condition is true then it will set the status variable as True.",
+										"type": "SetVariable",
+										"dependsOn": [],
+										"policy": {
+											"secureOutput": false,
+											"secureInput": false
+										},
+										"userProperties": [],
+										"typeProperties": {
+											"variableName": "Status",
+											"value": "True"
+										}
+									}
+								]
+							}
+						},
+						{
+							"name": "Until_copy1",
+							"type": "Until",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"timeout": "0.12:00:00"
+							}
+						}
+					],
 					"timeout": "0.12:00:00"
 				}
 			}
