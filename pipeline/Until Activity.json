@@ -53,6 +53,7 @@
 								],
 								"storeSettings": {
 									"type": "AzureBlobStorageReadSettings",
+									"recursive": true,
 									"enablePartitionDiscovery": false
 								},
 								"formatSettings": {
@@ -150,18 +151,6 @@
 									"name": "SId",
 									"type": "Int32",
 									"physicalType": "int"
-								}
-							},
-							{
-								"source": {
-									"name": "Date",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Date",
-									"type": "DateTime",
-									"physicalType": "date"
 								}
 							},
 							{
