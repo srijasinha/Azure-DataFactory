@@ -3,13 +3,7 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "dynamic_linked_azureSql",
-			"type": "LinkedServiceReference",
-			"parameters": {
-				"ServerName": "srija-test.database.windows.net",
-				"UserId": "srija",
-				"Password": "Iamgood@21",
-				"DatabaseName": "SALES"
-			}
+			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
@@ -18,6 +12,10 @@
 				"name": "SId",
 				"type": "int",
 				"precision": 10
+			},
+			{
+				"name": "Date",
+				"type": "date"
 			},
 			{
 				"name": "City",
@@ -38,5 +36,6 @@
 			"schema": "dbo",
 			"table": "SalesInfo"
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
 }

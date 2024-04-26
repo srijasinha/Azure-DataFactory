@@ -66,6 +66,8 @@
 		"folder": {
 			"name": "Activities"
 		},
-		"annotations": []
-	}
+		"annotations": [],
+		"lastPublishTime": "2024-04-22T09:23:04Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
 }

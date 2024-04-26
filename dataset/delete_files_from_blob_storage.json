@@ -14,5 +14,6 @@
 				"container": "adf"
 			}
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
 }

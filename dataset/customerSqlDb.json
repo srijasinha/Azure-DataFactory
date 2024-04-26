@@ -3,13 +3,7 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "dynamic_linked_azureSql",
-			"type": "LinkedServiceReference",
-			"parameters": {
-				"ServerName": "srija-test.database.windows.net",
-				"UserId": "srija",
-				"Password": "Iamgood@21",
-				"DatabaseName": "customer"
-			}
+			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
@@ -41,5 +35,6 @@
 			"schema": "dbo",
 			"table": "CustomerInfo"
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
 }
