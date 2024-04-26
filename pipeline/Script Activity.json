@@ -3,7 +3,8 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Script",
+				"name": "script",
+				"description": "Drop table",
 				"type": "Script",
 				"dependsOn": [],
 				"policy": {
@@ -30,10 +31,11 @@
 			},
 			{
 				"name": "Script1",
+				"description": "create db and table in sql",
 				"type": "Script",
 				"dependsOn": [
 					{
-						"activity": "Script",
+						"activity": "script",
 						"dependencyConditions": [
 							"Succeeded"
 						]
