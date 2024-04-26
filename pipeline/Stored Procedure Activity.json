@@ -3,39 +3,6 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Stored procedure",
-				"type": "SqlServerStoredProcedure",
-				"dependsOn": [
-					{
-						"activity": "Get Metadata",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"storedProcedureName": "FailPipeLineDetails"
-				},
-				"linkedServiceName": {
-					"referenceName": "dynamic_linked_azureSql",
-					"type": "LinkedServiceReference",
-					"parameters": {
-						"ServerName": "srija-uat.database.windows.net",
-						"UserId": "srija-uat",
-						"Password": "Iamgood@21",
-						"DatabaseName": " Fail_PipeLine"
-					}
-				}
-			},
-			{
 				"name": "Get Metadata",
 				"type": "GetMetadata",
 				"dependsOn": [],
@@ -62,6 +29,53 @@
 					"formatSettings": {
 						"type": "DelimitedTextReadSettings"
 					}
+				}
+			},
+			{
+				"name": "If Condition",
+				"type": "IfCondition",
+				"dependsOn": [
+					{
+						"activity": "Get Metadata",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "@bool(activity('Get Metadata').output.exists)",
+						"type": "Expression"
+					},
+					"ifFalseActivities": [
+						{
+							"name": "Stored procedure",
+							"type": "SqlServerStoredProcedure",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"storedProcedureName": "PipelineFailDetails"
+							},
+							"linkedServiceName": {
+								"referenceName": "dynamic_linked_azureSql",
+								"type": "LinkedServiceReference",
+								"parameters": {
+									"ServerName": "srija-uat.database.windows.net",
+									"UserId": "srija-uat",
+									"Password": "Iamgood@21",
+									"DatabaseName": "Hr"
+								}
+							}
+						}
+					]
 				}
 			}
 		],
