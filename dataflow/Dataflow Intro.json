@@ -1,0 +1,33 @@
+{
+	"name": "Dataflow Intro",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "Customer_us_Data",
+						"type": "DatasetReference"
+					},
+					"name": "Customer"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          CustomerName as string,",
+				"          {Mobile No} as integer,",
+				"          Active as string,",
+				"          CustomerId as integer,",
+				"          Subscribtion as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     limit: 100,",
+				"     isolationLevel: 'READ_UNCOMMITTED',",
+				"     format: 'table') ~> Customer"
+			]
+		}
+	}
+}
