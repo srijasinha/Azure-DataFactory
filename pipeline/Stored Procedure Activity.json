@@ -68,6 +68,23 @@
 								"referenceName": "Sqlserver_localdb",
 								"type": "LinkedServiceReference"
 							}
+						},
+						{
+							"name": "Fail",
+							"type": "Fail",
+							"dependsOn": [
+								{
+									"activity": "Stored procedure",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"userProperties": [],
+							"typeProperties": {
+								"message": "File Not Fount",
+								"errorCode": "EC403"
+							}
 						}
 					]
 				}
