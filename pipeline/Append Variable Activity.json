@@ -46,7 +46,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Get Metadata').output",
+						"value": "@activity('Get Metadata').output.childItems",
 						"type": "Expression"
 					},
 					"activities": [
@@ -91,17 +91,6 @@
 				}
 			}
 		],
-		"parameters": {
-			"Var": {
-				"type": "array",
-				"defaultValue": [
-					"Sales_India.csv",
-					"Sales_Us.csv",
-					"customer_India.csv",
-					"customer_Us.csv"
-				]
-			}
-		},
 		"variables": {
 			"FileList": {
 				"type": "Array"
