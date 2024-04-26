@@ -61,6 +61,9 @@
 								"secureInput": false
 							},
 							"userProperties": [],
+							"typeProperties": {
+								"storedProcedureName": "PipelineFails"
+							},
 							"linkedServiceName": {
 								"referenceName": "Sqlserver_localdb",
 								"type": "LinkedServiceReference"
