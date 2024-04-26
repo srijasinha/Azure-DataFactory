@@ -61,18 +61,9 @@
 								"secureInput": false
 							},
 							"userProperties": [],
-							"typeProperties": {
-								"storedProcedureName": "PipelineFailDetails"
-							},
 							"linkedServiceName": {
-								"referenceName": "dynamic_linked_azureSql",
-								"type": "LinkedServiceReference",
-								"parameters": {
-									"ServerName": "srija-uat.database.windows.net",
-									"UserId": "srija-uat",
-									"Password": "Iamgood@21",
-									"DatabaseName": "Hr"
-								}
+								"referenceName": "Sqlserver_localdb",
+								"type": "LinkedServiceReference"
 							}
 						}
 					]
