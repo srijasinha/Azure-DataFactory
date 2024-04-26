@@ -35,7 +35,7 @@
 				"type": "Script",
 				"dependsOn": [
 					{
-						"activity": "script",
+						"activity": "Wait",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -61,6 +61,22 @@
 						}
 					],
 					"scriptBlockExecutionTimeout": "02:00:00"
+				}
+			},
+			{
+				"name": "Wait",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "script",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 10
 				}
 			}
 		],
