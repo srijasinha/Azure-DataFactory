@@ -96,14 +96,6 @@
 				}
 			}
 		],
-		"variables": {
-			"FileName": {
-				"type": "Array",
-				"defaultValue": [
-					"[\"customer_Blog.csv\""
-				]
-			}
-		},
 		"folder": {
 			"name": "Activities"
 		},
