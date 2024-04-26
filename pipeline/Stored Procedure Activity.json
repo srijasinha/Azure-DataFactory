@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Stored procedure1",
+				"name": "Stored procedure",
 				"type": "SqlServerStoredProcedure",
 				"dependsOn": [],
 				"policy": {
@@ -13,7 +13,20 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "FailPipeLineDetails"
+				},
+				"linkedServiceName": {
+					"referenceName": "dynamic_linked_azureSql",
+					"type": "LinkedServiceReference",
+					"parameters": {
+						"ServerName": "srija-uat.database.windows.net",
+						"UserId": "srija-uat",
+						"Password": "Iamgood@21",
+						"DatabaseName": " Fail_PipeLine"
+					}
+				}
 			}
 		],
 		"folder": {
