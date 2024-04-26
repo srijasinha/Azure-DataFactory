@@ -24,6 +24,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -95,6 +96,14 @@
 				}
 			}
 		],
+		"variables": {
+			"FileName": {
+				"type": "Array",
+				"defaultValue": [
+					"[\"customer_Blog.csv\""
+				]
+			}
+		},
 		"folder": {
 			"name": "Activities"
 		},
