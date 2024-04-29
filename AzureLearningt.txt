@@ -1,0 +1,39 @@
+Topic:
+1)Pipeline
+2)Dataset
+3)To copy data from the local server(Mysql) to AzureDb - used one storage account 
+3)To copy data from the local server (MySql) to AzureDb - used 2nd storage account (to link the local server to another 2nd storage account container)
+4)Trigger- 
+    	 a)Schedule Trigger - The event triggered at a particular time
+	 b)Tumbling Trigger - The event is triggered in past and future time
+	c)Event storage Trigger - When we upload or delete a file other than a Txt file then this Event is triggered.
+5)Create a data set and copy it from 1 blob storage to another blob storage. (txt, JSON file)
+6)To connect to local SQL for the first time download Integration Runtime.
+7)Delete a file from the container and show in the storage account which file has been deleted.
+8)Delete a file from the local system and show in the storage account which file has been deleted.
+9) Parameter and Parameterized linked service- Ex - our source is Blob storage and we want to send data to DEV, UAT, and Prod environment. (create a single dataset and this will handle all 3 environments).
+Step - 1) create 3 different environments - UAT, TEST, DEV
+step -2) create a dynamic parameter in the linked service
+step -3 Create a dynamic parameter in Datasets 
+step -4) create dynamic parameters in Pipelines
+10)System Variables Demo Stored Procedure added in (dynamic data load pipeline)- These are at Pipeline Level
+11)Variables - They are defined and accessed on the Pipeline Level and it supports 3 types of data type - string, bol, and Array.
+12)Activity - 1) LookUp Activity- It can retrieve data from any Azure Data Factory.
+             2)Set Variable Activity - It is used to set the variable of an existing variable of type String.
+             3)If condition Activity 
+             4)Meta Data Activity - To get all information of Data or file
+             5)Filter Activity Activity - requirement - Load the customer data in the customer table and sales data in the sales table in the SQL server (test env)
+             6)ForEach Activity
+             7)Wait Activity
+             8)Until Activity
+             9)Validation Activity
+             10)Switch Activity
+             11)Append Variable Activity
+             12)Stored Procedure Activity
+	     13)Fail Activity
+	     14)Execute Pipeline Activity 
+             15)Script Activity - same as SQL commands
+             
+13)Pipeline Dependencies 
+14)Data Flow - Project 2(Branch) Demo
+
