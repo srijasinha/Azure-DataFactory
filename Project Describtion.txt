@@ -2,7 +2,7 @@ Project Explation- (IPRCTO )
 
 1)Intro - I have worked for health Insurance company,this project is aimed to enhance data reporting and visualization process for health insurance company.
 
-2)Problem - The company faced  in amaylayzing large data et related to clims,policyholder,providers,network,which leads to delay in decision making.
+2)Problem - The company faced  in amaylayzing large data set related to clims,policyholder,providers,network,which leads to delay in decision making.
 
 3)Role - My role is on Data cleaning and Reporting side, so working as BI developer.
 
