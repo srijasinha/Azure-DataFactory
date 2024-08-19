@@ -1,17 +1,18 @@
 Project Explation- (IPRCTO )
 
-1)Intro - I have worked for D- decker product , it is related to curtains or fabric , used in interior of our homes and this product is related to supply chain and management of diffrent variety.
+1)Intro - I have worked for health Insurance company,this project is aimed to enhance data reporting and visualization process for health insurance company.
 
-2)Problem - The data we are getting from the source is raw data
-and I and my project focusing on how to make it credibale and hence maintain the supply chain. 
+2)Problem - The company faced  in amaylayzing large data et related to clims,policyholder,providers,network,which leads to delay in decision making.
 
-3)Role - My role is on Data cleaning  and Reporting side, so working as BI developer.
+3)Role - My role is on Data cleaning and Reporting side, so working as BI developer.
 
-4)Contribution - As a developer first create end user document for all the things which we will be showing on dashboard. Then get raw data from source , then pull in any specefic ETL tool like SSIS , or Rdbms. After that quering only required field with basic transformation and finally pulling it in power bi wherewe are doing most of cleaning and transformations and analyzing it with the help of diffrent charts and visuals.
+4)Contribution - As a developer first create end user document for all the things which we will be showing on dashboard. Then get raw data from source , then pull in any specefic ETL tool like SSIS , or Rdbms. After that quering only required field with basic transformation and finally pulling it in power bi wherewe are doing most of cleaning and transformations ,do Data Modeling and analyzing it with the help of diffrent charts and visuals.
 
 5)Timeline - The project started 8 months ago and I am still working on this.
 
 6)Outcome - With the help of KPI 's shown on dashboard , we are able to manage the supply chain , showing the end users demand of diffrent products.
+
+7)Chalenges faced during project - Incomplte data,ensuring data security.
 
 
 PROJECT 2 - (AZURE DATA FACTORY)
