@@ -16,7 +16,7 @@ Project Explation- (IPRCTO )
 
 Project Descriotion - Microsoft Azure with Power Bi (Integration):
 
-1)Intro - Molina health care company uses ADF to ingest claims data from multiple sources accross the country and store it in Azuure Databricks.Power Bi pulls the data from Azure databricks, allowing the company to create a real time dashboard, and and performance.
+1)Intro - Molina health care company uses ADF to ingest claims data from multiple sources accross the country and store it in Azure Databricks.Power Bi pulls the data from Azure databricks, allowing the company to create a real time dashboard, and and performance.
 
 2)Use Azure Data Factory for Data ingestion and Transformation -
  A)Data ingestion - ADF can pull the data from various sources like Databases, Cloud storage.
