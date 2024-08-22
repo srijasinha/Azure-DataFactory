@@ -14,7 +14,7 @@ Project Explation- (IPRCTO )
 
 7)Chalenges faced during project - Incomplte data,ensuring data security.
 
-Project Descriotion - Microsoft Azure with Power Bi (Integration):
+Project Description - Microsoft Azure with Power Bi (Integration):
 
 1)Intro - Molina health care company uses ADF to ingest claims data from multiple sources accross the country and store it in Azure Databricks.Power Bi pulls the data from Azure databricks, allowing the company to create a real time dashboard, and and performance.
 
@@ -24,7 +24,13 @@ Project Descriotion - Microsoft Azure with Power Bi (Integration):
 
 3)Store Transformed Data in Azure Data services- we can use to load data in Azure SQL databse.
 
-4)connect PowerBI to Azure Data Sources- we can directly connect to Azure data sources 
+4)connect PowerBI to Azure Data Sources- we can directly connect to Azure data sources where powerBi can easily handle it.
+
+5)Visualization with PowerBi -
+A) Data Modeling- we can conect to data source in PowerBi prepared by ADF ,model the data,create relationship and build calculated columns and measures.
+B)Reports and Dashboards- PowerBi enables us to create reports and dashboards using the data.
+
+6)Automation and Orchestration- 
 
 
 
