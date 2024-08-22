@@ -1,10 +1,12 @@
+Hi , My name is srija sinha, I have completed my btech from computer science.I have total experience of 3 years in IT sector.I have worked on multiple technologies - Python(Django Framework),Tibco, and currently working in PowerBi(with ADF -Azure Data Factory Integration).My current job role is an Anaylst.
+
 Project Explation- (IPRCTO ) - PowerBI
 
 1)Intro - I have worked for health Insurance company,this project is aimed to enhance data reporting and visualization process for health insurance company.
 
 2)Problem - The company faced  in amaylayzing large data set related to clims,policyholder,providers,network,which leads to delay in decision making.
 
-3)Role - My role is on Data cleaning and Reporting side, so working as BI developer.
+3)Role - My role is on Data cleaning and Reporting side, so working as PowerBi Developer.
 
 4)Contribution - As a developer first create end user document for all the things which we will be showing on dashboard. Then get raw data from source , then pull in any specefic ETL tool like SSIS , or Rdbms. After that quering only required field with basic transformation and finally pulling it in power bi wherewe are doing most of cleaning and transformations ,do Data Modeling and analyzing it with the help of diffrent charts and visuals.
 
