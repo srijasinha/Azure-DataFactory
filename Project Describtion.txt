@@ -1,4 +1,4 @@
-Project Explation- (IPRCTO )
+Project Explation- (IPRCTO ) - PowerBI
 
 1)Intro - I have worked for health Insurance company,this project is aimed to enhance data reporting and visualization process for health insurance company.
 
@@ -26,13 +26,12 @@ Project Description - Microsoft Azure with Power Bi (Integration):
 
 4)connect PowerBI to Azure Data Sources- we can directly connect to Azure data sources where powerBi can easily handle it.
 
-5)Visualization with PowerBi -
+5)Visualization with PowerBi-
 A) Data Modeling- we can conect to data source in PowerBi prepared by ADF ,model the data,create relationship and build calculated columns and measures.
 B)Reports and Dashboards- PowerBi enables us to create reports and dashboards using the data.
 
 6)Automation and Orchestration- 
-
-
+ADF can be used to automate the entire process,from data ingestion to transformation and loading in PowerBi.We can triggers,schedule pipelines.This enables the flow of data from ingestion to visualization.
 
 PROJECT 2 - (AZURE DATA FACTORY)
 
