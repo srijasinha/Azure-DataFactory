@@ -1,4 +1,4 @@
-Hi , My name is srija sinha, I have completed my btech from computer science.I have total experience of 3 years in IT sector.I have worked on multiple technologies - Python(Django Framework),Tibco, and currently working in PowerBi(with ADF -Azure Data Factory Integration).My current job role is an Anaylst.
+Hi , My name is srija sinha, I have completed my btech from computer science.I have total experience of 3 years in IT sector.I have worked on multiple technologies - Python(Django Framework),Tibco, and currently working in PowerBi(with ADF -Azure Data Factory Integration).My current job role is an Anaylst in corpororate Reporting Team.
 
 Project Explation- (IPRCTO ) - PowerBI
 
