@@ -1,0 +1,5 @@
+Azure Data Factory-
+- It is ETL/ELT 
+-To migrate the data we can use ADF. 
+Process for migration- 
+Source(sql,mongodb) contains flat,csv,http files -> ADF(ETL/ELT) [iT CONTAINS CONNECTORS FOR ALL SOURCES)-> Destination(External App or cloud, AWS, DataLake.S3)
