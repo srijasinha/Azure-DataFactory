@@ -18,11 +18,10 @@ If we want to create a data lake click on Herarcial name space button (under res
 3)Create Azure Data Factory 
 
 Fundamental topics - 
-a)Linked Service - A linked service defines the connection to a data source. 
+a)Linked Service - A linked service defines the connection to a data source or an application(ADF) 
 Source(sql) [Souce to ADF We need a connection(This is called Linked Service)]-> ADF-> Destination
-b)DataSets- It is a named view of data that simply points or references the data you want to use in your activities as inputs and outputs. 
+
+b)DataSets- It is actual data that we need to pick, fetch or store. 
 Datasets identify data within different data stores, such as tables, files, folders, and documents
 Source(sql) (WE have multiple tables, To identify the table (data) which is to be migrated)-> ADF-> Destination
-ataset is a named view of data that simply points or references the data you want to use in your activities as inputs and outputs. Datasets identify data within different data stores, such as tables, files, folders, and documents
-
 
