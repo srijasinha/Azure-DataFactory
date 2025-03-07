@@ -4,3 +4,9 @@ Azure Data Factory-
 Process for migration- 
 Source(sql,mongodb) contains flat,csv,http files -> ADF(ETL/ELT) [iT CONTAINS CONNECTORS FOR ALL SOURCES)-> Destination(External App or cloud, AWS, DataLake.S3)
 -After Extracting Data in ADF - ETL Transformation happens, for transformation  ADF has Data Flow funcationality(behind scenes it runs spark)
+-Resource - It is the services that we use in Azure. Ex- Azure Data Fcatory is Resource
+-Resource Groups - It is like a folder to store files.The resource that we use is stored under Resource group.
+-1)Resource Azure Data Lake - We dont have Azure data lake. To get Azure ata Lake we need to do small configuration to get Azure Data Lake.We have storage accounts. By default we have azure Blob storage.
+Blob storage - We can use only containers
+Azure Data Lake - We can use folders inside folder( herachyial )
+2)Azure Data Fctory (Resource)
