@@ -35,4 +35,10 @@ Process- dataset->connection->source->copy activity->sink
 11) Debug this pipeline(run)
 
 2)Migrate the data from Github -> Copy activity ->Data Lake
+1) create a new pipeline->copy activity
+2)Sorce->create a new dataset ->Http(file in git hub)->csv->set properties( create a new linked service)->Base url->Relative url
+3)Sink->create a new dataset ->DataLake->csv->set properties
+4) Debug this pipeline(run)
+
+
 
