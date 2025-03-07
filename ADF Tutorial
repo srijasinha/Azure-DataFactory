@@ -27,6 +27,10 @@ If we want to create a data lake click on Herarcial name space button (under res
 4) Go to Resource ->storage account->create container (in data lake we create container) for souce and destination
 5)upload one file in source container (use directory in data lake) 
 6)Create dir and upload file inside that
-7)Go to ADF studio 
-
+7)Go to ADF studio ->Manage->Linked service-> new linked service (To establish a comnnection between source and destinationation we need a connection)
+8)Copy Activity - copy data from one place to another
+Process- dataset->connection->source->copy activity->sink
+9)IN ADF studio create Pipeline ->copy activity -> source-> create a dataset (Data Lake gen2) and Csv file-> set properties
+10)sink-> create a dataset (Data Lake gen2) and Csv file ->set properties
+11) Debug this pipeline(run)
 
