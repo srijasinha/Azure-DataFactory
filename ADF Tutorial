@@ -19,7 +19,7 @@ b)DataSets- It is actual data that we need to pick, fetch or store.
 Datasets identify data within different data stores, such as tables, files, folders, and documents
 Source(sql) (WE have multiple tables, To identify the table (data) which is to be migrated)-> ADF-> Destination
 
-Practical ADF -   MIGRATE THE SOURCE Data TO Destination container
+Practical ADF - 1)  MIGRATE THE SOURCE (DataLake) ->Copy activity  Destination (Data Lake)
 1) Create Resource Group
 2) Create Resource ->First create Storage account(Microsoft storage account) 
 If we want to create a data lake click on Herarcial name space button (under resource section)
@@ -33,4 +33,6 @@ Process- dataset->connection->source->copy activity->sink
 9)IN ADF studio create Pipeline ->copy activity -> source-> create a dataset (Data Lake gen2) and Csv file-> set properties
 10)sink-> create a dataset (Data Lake gen2) and Csv file ->set properties
 11) Debug this pipeline(run)
+
+2)Migrate the data from Github -> Copy activity ->Data Lake
 
