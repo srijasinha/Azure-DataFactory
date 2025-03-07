@@ -11,12 +11,6 @@ Blob storage - We can use only containers
 Azure Data Lake - We can use folders inside folder( herachyial )
 2)Azure Data Fctory (Resource)
 
-Practical ADF - 
-1) Create Resource Group
-2) Create Resource ->First create Storage account(Microsoft storage account) 
-If we want to create a data lake click on Herarcial name space button (under resource section)
-3)Create Azure Data Factory 
-
 Fundamental topics - 
 a)Linked Service - A linked service defines the connection to a data source or an application(ADF) 
 Source(sql) [Souce to ADF We need a connection(This is called Linked Service)]-> ADF-> Destination
@@ -24,4 +18,15 @@ Source(sql) [Souce to ADF We need a connection(This is called Linked Service)]->
 b)DataSets- It is actual data that we need to pick, fetch or store. 
 Datasets identify data within different data stores, such as tables, files, folders, and documents
 Source(sql) (WE have multiple tables, To identify the table (data) which is to be migrated)-> ADF-> Destination
+
+Practical ADF -   MIGRATE THE SOURCE Data TO Destination container
+1) Create Resource Group
+2) Create Resource ->First create Storage account(Microsoft storage account) 
+If we want to create a data lake click on Herarcial name space button (under resource section)
+3)Create Azure Data Factory 
+4) Go to Resource ->storage account->create container (in data lake we create container) for souce and destination
+5)upload one file in source container (use directory in data lake) 
+6)Create dir and upload file inside that
+7)Go to ADF studio 
+
 
