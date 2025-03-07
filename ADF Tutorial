@@ -10,3 +10,8 @@ Source(sql,mongodb) contains flat,csv,http files -> ADF(ETL/ELT) [iT CONTAINS CO
 Blob storage - We can use only containers
 Azure Data Lake - We can use folders inside folder( herachyial )
 2)Azure Data Fctory (Resource)
+
+Practical ADF - 
+1) Create Resource Group
+2) Create Resource ->First create Storage account(Microsoft storage account) 
+If we want to create a data lake click on Herarcial name space button (under resource section)
