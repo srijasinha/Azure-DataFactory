@@ -40,5 +40,21 @@ Process- dataset->connection->source->copy activity->sink
 3)Sink->create a new dataset ->DataLake->csv->set properties
 4) Debug this pipeline(run)
 
+Problem statement - There are two  files in a container - File1 is used by Reporting team , File2 is used by data science team.
+So we need to build a solution , Reporting team can view only File 1 , not File 2 . Only File1 can go to new container
+Solution - step 1)Get Meta data activity use - All the items insite files
+step 2) use for each activity - (Filwe 1, File 2...) - childitem.name() we use
+step 3) use IF condition activity  inside for each - checks file1 statisfy the codition or not -- @startswith(item().name,'File')
+step 4)create a new container - reporting, transfer those reporting files only - like operator we can use
+step 5)Use copy activity - The source will act as destination here - use patameter  , file  name will be selected dynamically
+give paametername to copy activity - @item.name, 
+step 6) Do same for sink part
+Process :-
+Metadata->it will give us all the child items of folder
+ForEach activity -> It will iterate throgh each item in a folder
+iside For each activity -> If activity condition matches or not - @startswith(item().name,'File'
+ If matches then peform copy activity - Copy filles dynamically using parameter
+
+
 
 
