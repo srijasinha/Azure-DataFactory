@@ -16,6 +16,7 @@ a)Linked Service - A linked service defines the connection to a data source or a
 Source(sql) [Souce to ADF We need a connection(This is called Linked Service)]-> ADF-> Destination
 
 b)DataSets- It is actual data that we need to pick, fetch or store. 
+Dataset a named view of data that simply points or references the data you want to use in your activities as inputs and outputs
 Datasets identify data within different data stores, such as tables, files, folders, and documents
 Source(sql) (WE have multiple tables, To identify the table (data) which is to be migrated)-> ADF-> Destination
 
