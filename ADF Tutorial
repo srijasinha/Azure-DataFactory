@@ -56,6 +56,8 @@ ForEach activity -> It will iterate throgh each item in a folder
 iside For each activity -> If activity condition matches or not - @startswith(item().name,'File'
  If matches then peform copy activity - Copy filles dynamically using parameter
 
+-Data Flow - It is used for Data Transformation.We can use joins, filter etc all options which are present in SQL
+
 
 
 
