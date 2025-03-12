@@ -56,7 +56,16 @@ ForEach activity -> It will iterate throgh each item in a folder
 iside For each activity -> If activity condition matches or not - @startswith(item().name,'File'
  If matches then peform copy activity - Copy filles dynamically using parameter
 
--Data Flow - It is used for Data Transformation.We can use joins, filter etc all options which are present in SQL
+Question - Fault Talurence in ADF?
+
+-Data Flow - It is used for Data Transformation. We can use joins, filter etc all options which are present in SQL
+- Variable Demo - set variable activity we can stort anything (output of activity)
+Get Meta Data -> set variable activity
+
+-Storage Event Trigger - allow you to automate the execution of pipelines based on specific events occurring in your data sources
+Souce -> copy activity -> Sink (Pipelines runs after evry 2 mins and drop file to sink)
+Problem Statement - The dependency is source, because we don't know when the files will be get added in source .But the requirement is as soon as files got added
+in source the pipeline should copy files to sink.
 
 
 
