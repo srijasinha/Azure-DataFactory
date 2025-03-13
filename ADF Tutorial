@@ -1,20 +1,10 @@
 Azure Data Factory-
 - It is ETL/ELT 
 -To migrate the data we can use ADF. 
-Process for migration- 
-Source(sql,mongodb) contains flat,csv,http files -> ADF(ETL/ELT) [iT CONTAINS CONNECTORS FOR ALL SOURCES)-> Destination(External App or cloud, AWS, DataLake.S3)
--After Extracting Data in ADF - ETL Transformation happens, for transformation  ADF has Data Flow funcationality(behind scenes it runs spark)
--Resource - It is the services that we use in Azure. Ex- Azure Data Fcatory is Resource
--Resource Groups - It is like a folder to store files.The resource that we use is stored under Resource group.
--1)Resource Azure Data Lake - We dont have Azure data lake. To get Azure ata Lake we need to do small configuration to get Azure Data Lake.We have storage accounts. By default we have azure Blob storage.
-Blob storage - We can use only containers
-Azure Data Lake - We can use folders inside folder( herachyial )
-2)Azure Data Fctory (Resource)
 
 Fundamental topics - 
 a)Linked Service - A linked service defines the connection to a data source or an application(ADF) or sink
 Source(sql) [Souce to ADF We need a connection(This is called Linked Service)]-> ADF-> Destination
-
 
 b)DataSets- It is actual data that we need to pick, fetch or store. It is schema of a file.
 Dataset a named view of data that simply points or references the data you want to use in your activities as inputs and outputs
@@ -25,6 +15,22 @@ C)Integration Runtime - 1) Auto resolve integration Run time - whenever our data
 Ex- (source data - SQL DB  and sink data - SQL DB)
 2)Self hosted integration Run time -  whenever our data is available in diffrent space
 Ex- (source data - SQL DB  and sink data - Cloud DB)
+
+D)Azure storage account contains 4 types of storage services -
+1) Blob Storage- when we have unstructured data like video, audio, test file
+2) File Storage- To store file on shared path, where all team members can acess file.
+3) Table storage -when we have structured data.Data is stored in Tabular form
+4) Queue Storage - File transfers one after one (After transfer of 1 file it goes to next file)
+
+E)Azure account contains 3 types-
+1)Blob storage -  when we have unstructured data
+2)General Purpose V1 account- 
+3)General Purpose V2 account -Latest vesion of Azure
+
+F)Acess Tier we have 3 types -
+1)Hot Tier- when we have to acess data Frequently
+2)Cold Tier- when we don't have to acess data Frequently
+3)Archive -when we have to acess data Rarely
 
 Practical ADF - 1)  MIGRATE THE SOURCE (DataLake) ->Copy activity  Destination (Data Lake)
 1) Create Resource Group
@@ -46,6 +52,16 @@ Process- dataset->connection->source->copy activity->sink
 2)Sorce->create a new dataset ->Http(file in git hub)->csv->set properties( create a new linked service)->Base url->Relative url
 3)Sink->create a new dataset ->DataLake->csv->set properties
 4) Debug this pipeline(run)
+
+Process for migration- 
+Source(sql,mongodb) contains flat,csv,http files -> ADF(ETL/ELT) [iT CONTAINS CONNECTORS FOR ALL SOURCES)-> Destination(External App or cloud, AWS, DataLake.S3)
+-After Extracting Data in ADF - ETL Transformation happens, for transformation  ADF has Data Flow funcationality(behind scenes it runs spark)
+-Resource - It is the services that we use in Azure. Ex- Azure Data Fcatory is Resource
+-Resource Groups - It is like a folder to store files.The resource that we use is stored under Resource group.
+-1)Resource Azure Data Lake - We dont have Azure data lake. To get Azure ata Lake we need to do small configuration to get Azure Data Lake.We have storage accounts. By default we have azure Blob storage.
+Blob storage - We can use only containers
+Azure Data Lake - We can use folders inside folder( herachyial )
+2)Azure Data Fctory (Resource)
 
 Problem statement - There are two  files in a container - File1 is used by Reporting team , File2 is used by data science team.
 So we need to build a solution , Reporting team can view only File 1 , not File 2 . Only File1 can go to new container
