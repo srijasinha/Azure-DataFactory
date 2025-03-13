@@ -33,7 +33,7 @@ F)Acess Tier we have 3 types -
 3)Archive -when we have to acess data Rarely
 
 Practical ADF - 1)  MIGRATE THE SOURCE (DataLake) ->Copy activity  Destination (Data Lake)
-solution - Blob storage(source)->linked service->dataset-> copy activity-<dataset-<linked service-<sink(Blob storage)
+solution - DataLake storage(source)->linked service->dataset-> copy activity-<dataset-<linked service-<sink(DataLake storage)
 1) Create Resource Group
 2) Create Resource ->First create Storage account(Microsoft storage account) 
 If we want to create a data lake click on Herarcial name space button (under resource section)
