@@ -12,13 +12,19 @@ Azure Data Lake - We can use folders inside folder( herachyial )
 2)Azure Data Fctory (Resource)
 
 Fundamental topics - 
-a)Linked Service - A linked service defines the connection to a data source or an application(ADF) 
+a)Linked Service - A linked service defines the connection to a data source or an application(ADF) or sink
 Source(sql) [Souce to ADF We need a connection(This is called Linked Service)]-> ADF-> Destination
 
-b)DataSets- It is actual data that we need to pick, fetch or store. 
+
+b)DataSets- It is actual data that we need to pick, fetch or store. It is schema of a file.
 Dataset a named view of data that simply points or references the data you want to use in your activities as inputs and outputs
 Datasets identify data within different data stores, such as tables, files, folders, and documents
 Source(sql) (WE have multiple tables, To identify the table (data) which is to be migrated)-> ADF-> Destination
+
+C)Integration Runtime - 1) Auto resolve integration Run time - whenever our data is available in same space 
+Ex- (source data - SQL DB  and sink data - SQL DB)
+2)Self hosted integration Run time -  whenever our data is available in diffrent space
+Ex- (source data - SQL DB  and sink data - Cloud DB)
 
 Practical ADF - 1)  MIGRATE THE SOURCE (DataLake) ->Copy activity  Destination (Data Lake)
 1) Create Resource Group
