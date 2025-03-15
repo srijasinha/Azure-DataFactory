@@ -122,7 +122,14 @@ Employee container employee related information is available as CSV and in depar
 we need to combine csv file (employee + department) and store and we have to save to emp_department container. Create a pipeline
 Solution- Employee(csv file)   
            Join Tranformation (both container) - > sink(emp_departmen)(csv)
-          Department(Csv file)
+           Department(Csv file)
+ a)Data Flow- Add source>->Dataseet(sql)(Employee_CSV)->linked service->----------
+                     Use left outer join Tranformation based on Id column (employee) and user column(department)
+ b) Add source>->Dataseet(sql)(Department_CSV)->linked service->--------
+ c) Add sink- (emp_department) csv file container
+Note: To run Data Flow create a pipeline, drag data flow in canvas  and run it.
+
+
 
 
 
