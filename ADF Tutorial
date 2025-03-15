@@ -134,7 +134,7 @@ Solution- CSV1(csv file)
            Union Tranformation -> sink(Final Table)(csv)
            CSV2(Csv file) 
 a)Data Flow- Add source>->Dataseet(sql)(CSV1)->linked service->----------
-                     Use Union Tranformation 
+                     Use Union Tranformation (select incoming stream and union with option)
  b) Add source>->Dataseet(sql)(CSV2)->linked service->--------
  c) Add sink- (Final_Table) csv file container
 
@@ -143,9 +143,10 @@ Union criteria - 1)There must be same data types
                  2)There must be same no of columns
                  3)Row based union.
 
-Ques-Diffrence between Union And Join?
+Ques-Diffrence between Union And Join? Whenever we have to combine data Row Wise then we use Union.
 Ans- Whenever we have to combine data Row Wise then we use Union Transformation.
      Whenever we have to combine data Column Wise then we use Join Transformation.
+
 
 
 
