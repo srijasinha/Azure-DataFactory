@@ -112,6 +112,8 @@ Each Date data is seperate file.
 Problem statement - We have data available in azure data SQL DB as table. We are copying data in blob storage as csv file. We have to copy limited data not all the data to blob
 storage account apply filter transformation.Data should be sorted and it sshould be store in target location.
 solution - Azure SQL DB [Table](source)->linked service->dataset-> DATA FLOW ->Filter->sort-<dataset-<linked service-<sink(Blob Storage)
+Data Flow->->Dataseet(sql)(table)->linked service->Filter(add)-<sort-<sink(Blob Storage)
+Note: To run Data Flow create a pipeline, drag data flow in canvas  and run it.
 
 
 
