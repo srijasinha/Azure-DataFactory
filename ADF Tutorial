@@ -155,11 +155,16 @@ a)We need to copy data in storage another container but we want only limited col
 b)We want to rename the column
 c)we want to reorder the column
 Solution- CSV1(csv file)   
-a)Data Flow- Add source>->Dataseet(sql)(CSV1)->linked service->----------
+a)Data Flow- Add source>->Dataseet(sql)(CSV1)->linked service
 b)Use select Tranformation
 c) Add sink- (Final_Table) csv file container
 Note: To run Data Flow create a pipeline, drag data flow in canvas  and run it.
 
+12)Derived Transformation- We can either generate a new column or update an exixting column.
+Problem statement- 1)Suppose in any column data is coming as Blank and we have to modify as unknown
+2)Suppose you have to add a new column and that column you have to do in UPPER Case
+3)You have to add new column combination 2,3 column
+solution- Blob storage->Derrieved transformation-> Blob storage
 
 
 
