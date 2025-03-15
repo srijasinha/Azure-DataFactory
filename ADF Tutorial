@@ -171,6 +171,14 @@ b)Use Derieved column Tranformation -Write in Expression Builder
 c) Add sink- (Final_Table) csv file container
 Note: To run Data Flow create a pipeline, drag data flow in canvas  and run it.
 
+13)Aggregate Transformation -We can perform SUM,COUNT,MAX,Min Groupe By existing or computed column
+solution- Blob storage->Aggregate transformation-> Blob storage
+Process- CSV1(csv file)   
+a)Data Flow- Add source>->Dataseet(sql)(CSV1)->linked service
+b)Use Derieved column Tranformation -Write in Expression Builder group by or count
+c) Add sink- (Final_Table) csv file container
+Note: To run Data Flow create a pipeline, drag data flow in canvas  and run it.
+
 
 
 
