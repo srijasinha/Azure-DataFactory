@@ -19,6 +19,7 @@ Ex- (source data - SQL DB  and sink data - SQL DB)
 2)Self hosted integration Run time -  whenever our data is available in diffrent space
 Ex- (source data - SQL DB  and sink data - Cloud DB)
 
+
 D)Azure storage account contains 4 types of storage services -
 1) Blob Storage- when we have unstructured data like video, audio, test file
 2) File Storage- To store file on shared path, where all team members can acess file.
@@ -178,6 +179,20 @@ a)Data Flow- Add source>->Dataseet(sql)(CSV1)->linked service
 b)Use Derieved column Tranformation -Write in Expression Builder group by or count
 c) Add sink- (Final_Table) csv file container
 Note: To run Data Flow create a pipeline, drag data flow in canvas  and run it.
+
+14)Parameterization of Dataset- Process of dynamic pass by value during run time to avoid duplicate task
+Suppose we have 1 table in my SQL DB and I want to move data to Blob Storage , so I will create source dataset and I will pass table name and I will copy data into blob storage
+Problem: Suppose we have 100 table in my SQL DB and I want to move data to Blob Storage , will you create 100 pipeline to create a dataset and pass table name?
+To avoid this concept use Parameterization concept.
+a)create Dataset (SQL)->linked service
+b)create parameter
+c)In connection Pass the parmaeter dynamically
+d)Pass the value of parameter, this will show data
+
+15)Parameterization of linked service- We can pass dynamic linked service .Ex- we have 2 -3 
+
+
+
 
 
 
