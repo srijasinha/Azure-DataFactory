@@ -1,6 +1,9 @@
 Azure Data Factory-
 - It is ETL/ELT 
 -To migrate the data we can use ADF. 
+-Data Flow - It is used for Data Transformation. We can use joins, filter etc all options which are present in SQL
+- Variable Demo - set variable activity we can stort anything (output of activity)
+Get Meta Data -> set variable activity
 
 Fundamental topics - 
 a)Linked Service - A linked service defines the connection to a data source or an application(ADF) or sink
@@ -87,10 +90,6 @@ iside For each activity -> If activity condition matches or not - @startswith(it
 
 Question - Fault Talurence in ADF?
 
--Data Flow - It is used for Data Transformation. We can use joins, filter etc all options which are present in SQL
-- Variable Demo - set variable activity we can stort anything (output of activity)
-Get Meta Data -> set variable activity
-
 5)Problem statement - We have data available in Azure Blob storage .We need to copy data froom azure blob storage to sql DB.Create Pipeline
 solution-   Azure Blob storage [Csv File](source)->linked service->dataset-> copy activity-<dataset-<linked service-<sink(Azure SQL)
 
@@ -108,6 +107,11 @@ due to some reason data was missed by historical date(past date).We need to run 
 each date data.
 solution-   Azure Blob storage [Csv File](source)->linked service->dataset-> copy activity-<dataset-<linked service-<sink(Blob Storage)
 Each Date data is seperate file.
+
+8)Data Flow Transformation - It is used for Data Transformation to perform ETL. We can use joins, filter etc all options which are present in SQL
+Problem statement - We have data available in azure data SQL DB as table. We are copying data in blob storage as csv file. We have to copy limited data not all the data to blob
+storage account apply filter transformation.Data should be sorted and it sshould be store in target location.
+solution - Azure SQL DB [Table](source)->linked service->dataset-> DATA FLOW ->Filter->sort-<dataset-<linked service-<sink(Blob Storage)
 
 
 
