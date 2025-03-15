@@ -116,6 +116,15 @@ Data Flow->->Dataseet(sql)(table)->linked service->Filter(add)-<sort-<sink(Blob 
 in optimize option - select single partion 
 Note: To run Data Flow create a pipeline, drag data flow in canvas  and run it.
 
+9)Join Tranformation-
+Problem statement - We have 2 container in storage account employee and department.
+Employee container employee related information is available as CSV and in department department CSV is available.
+we need to combine csv file (employee + department) and store and we have to save to emp_department container. Create a pipeline
+Solution- Employee(csv file)   
+           Join Tranformation (both container) - > sink(emp_departmen)(csv)
+          Department(Csv file)
+
+
 
 
 
