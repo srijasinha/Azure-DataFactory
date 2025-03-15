@@ -129,16 +129,14 @@ Solution- Employee(csv file)
  c) Add sink- (emp_department) csv file container
 Note: To run Data Flow create a pipeline, drag data flow in canvas  and run it.
 
-10)Union Tranformation -
+10)Union Tranformation - We have 2 CSV File in 1 container.We need to combine and store into final location.Create pipeline in azure Data Factory
 Solution- CSV1(csv file)   
-          Union Tranformation -> sink(Final Table)(csv)
-           CSV2(Csv file)Solution- Employee(csv file)   
-           Join Tranformation (both container) - > sink(emp_departmen)(csv)
-           Department(Csv file)
-a)Data Flow- Add source>->Dataseet(sql)(Employee_CSV)->linked service->----------
-                     Use left outer join Tranformation based on Id column (employee) and user column(department)
- b) Add source>->Dataseet(sql)(Department_CSV)->linked service->--------
- c) Add sink- (emp_department) csv file container
+           Union Tranformation -> sink(Final Table)(csv)
+           CSV2(Csv file) 
+a)Data Flow- Add source>->Dataseet(sql)(CSV1)->linked service->----------
+                     Use Union Tranformation 
+ b) Add source>->Dataseet(sql)(CSV2)->linked service->--------
+ c) Add sink- (Final_Table) csv file container
 
 
 Note: To run Data Flow create a pipeline, drag data flow in canvas  and run it.
