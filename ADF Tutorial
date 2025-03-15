@@ -129,7 +129,8 @@ Solution- Employee(csv file)
  c) Add sink- (emp_department) csv file container
 Note: To run Data Flow create a pipeline, drag data flow in canvas  and run it.
 
-10)Union Tranformation - We have 2 CSV File in 1 container.We need to combine and store into final location.Create pipeline in azure Data Factory
+10)Union Tranformation - 
+Problem statement- We have 2 CSV File in 1 container.We need to combine and store into final location.Create pipeline in azure Data Factory
 Solution- CSV1(csv file)   
            Union Tranformation -> sink(Final Table)(csv)
            CSV2(Csv file) 
@@ -146,6 +147,22 @@ Union criteria - 1)There must be same data types
 Ques-Diffrence between Union And Join? Whenever we have to combine data Row Wise then we use Union.
 Ans- Whenever we have to combine data Row Wise then we use Union Transformation.
      Whenever we have to combine data Column Wise then we use Join Transformation.
+
+11) Select Transformation - 
+We use the select transformation to rename,drop,or reorder columns
+Problem statement- We have data in azure storage account
+a)We need to copy data in storage another container but we want only limited coloumn
+b)We want to rename the column
+c)we want to reorder the column
+Solution- CSV1(csv file)   
+a)Data Flow- Add source>->Dataseet(sql)(CSV1)->linked service->----------
+b)Use select Tranformation
+c) Add sink- (Final_Table) csv file container
+Note: To run Data Flow create a pipeline, drag data flow in canvas  and run it.
+
+
+
+
 
 
 
