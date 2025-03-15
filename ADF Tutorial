@@ -32,6 +32,12 @@ F)Acess Tier we have 3 types -
 2)Cold Tier- when we don't have to acess data Frequently
 3)Archive -when we have to acess data Rarely
 
+G)Trigger- Trigger are objects that enable automatic execution of pipeline based on predefined or schedules.
+ a)Schedule Trigger - The event triggered at a scheduled time (min,hour,second)
+	b)Tumbling Trigger - The event is triggered in past and future time
+	c)Event storage Trigger - When we upload or delete a file other than a Txt file to run a pipeeline then this Event is triggered.
+ d)Manual Triger- Allows manual execution of pipeline by a user or external System.
+
 Practical ADF - 1)  MIGRATE THE SOURCE (DataLake) ->Copy activity  Destination (Data Lake)
 solution - DataLake storage(source)->linked service->dataset-> copy activity-<dataset-<linked service-<sink(DataLake storage)
 1) Create Resource Group
@@ -85,13 +91,19 @@ Question - Fault Talurence in ADF?
 - Variable Demo - set variable activity we can stort anything (output of activity)
 Get Meta Data -> set variable activity
 
--Storage Event Trigger - allow you to automate the execution of pipelines based on specific events occurring in your data sources
-Souce -> copy activity -> Sink (Pipelines runs after evry 2 mins and drop file to sink)
-Problem Statement - The dependency is source, because we don't know when the files will be get added in source .But the requirement is as soon as files got added
-in source the pipeline should copy files to sink.
-
 5)Problem statement - We have data available in Azure Blob storage .We need to copy data froom azure blob storage to sql DB.Create Pipeline
 solution-   Azure Blob storage [Csv File](source)->linked service->dataset-> copy activity-<dataset-<linked service-<sink(Azure SQL)
+
+6) Storage Event Trigger - allow you to automate the execution of pipelines based on specific events occurring in your data sources
+Souce -> copy activity -> Sink (Pipelines runs after evry 2 mins and drop file to sink)
+Problem Statement -We have data Comming from External sources.If any new file is getting uploaded in storage account then new pipwline 
+should get triggered.Pipeline should copy the data fom one cotainer to another as JSon format.
+Solution - File upload-> Azure Data storage account ->copy activity-< ccv to json
+Note:- A file is getting deleted or uploaded in a storage account, Event got created.So based on this event we have to run this pipeline 
+then its called Event Baased Trigger. only two type of events(create,Delete)
+
+7)Tumbling Window Trigger - Tumbling Window are fixed size and no overlapping time intervals.
+
 
 
 
