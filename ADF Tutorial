@@ -103,6 +103,10 @@ Note:- A file is getting deleted or uploaded in a storage account, Event got cre
 then its called Event Baased Trigger. only two type of events(create,Delete)
 
 7)Tumbling Window Trigger - Tumbling Window are fixed size and no overlapping time intervals.
+Problem statement - We have data available in azure data SQL DB.We are copying data in blob storage every 24 hr interval for data as csv file
+due to some reason data was missed by historical date(past date).We need to run the pipeline from 1st march to 6th march and csv file should contain
+each date data.
+solution-   Azure Blob storage [Csv File](source)->linked service->dataset-> copy activity-<dataset-<linked service-<sink(Blob Storage)
 
 
 
