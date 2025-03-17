@@ -254,7 +254,13 @@ We can also create parameter based SP
 Solution: create store procedure activity
 Add parameter id and pass the value dynamically Id
 
-22)Lookup Activity:
+22)Lookup Activity:Lookup activity reads and return content of a configuration file or table.
+Problem statement: we have data employee and employee_resign table.We need to look up employee_resign table , if any value present 
+then we need to delete from employee table. Create pipeline
+Solution: lookup activity (employee_resign table) -< for each--inside for each (store procedure activity)
+Explanation: In look up activity we look up for all employee id,Then all employee id is iterated through for each activity.
+In Store procedure the employee id is deleted from employee_table.
+
 
 
 
