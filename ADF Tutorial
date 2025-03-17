@@ -89,7 +89,7 @@ Azure Data Lake - We can use folders inside folder( herachyial )
 4)Problem statement - There are two  files in a container - File1 is used by Reporting team , File2 is used by data science team.
 So we need to build a solution , Reporting team can view only File 1 , not File 2 . Only File1 can go to new container
 Solution - step 1)Get Meta data activity use - All the items inside files
-step 2) use for each activity - (Filwe 1, File 2...) - childitem.name() we use
+step 2) use for each activity - (File 1, File 2...) - childitem.name() we use
 step 3) use IF condition activity  inside for each - checks file1 statisfy the codition or not -- @startswith(item().name,'File')
 step 4)create a new container - reporting, transfer those reporting files only - like operator we can use
 step 5)Use copy activity - The source will act as destination here - use patameter  , file  name will be selected dynamically
@@ -223,6 +223,39 @@ Solution:
 Azure Blob storage [Csv File](source)->linked service->dataset-> copy activity-<dataset-<linked service-<sink(Azure Blob storage)(json file)
 Note: 1)In sink dataset go to connection , click on dynamic content ->At below we will see parameter and function
 Select Date Function->UTCnow(),IST
+
+18)If condition activity: It is similar to if else contition in any programing language
+Problem Statement: sql tables we have emp and departmentment tables in a container - emp  --- Employeee container                        
+            If activity :  It the file contains emp then go to employee container else go to department container
+            - department --- Department container
+Solution: GetmetaData -> forEach(select childitems)-< (inside for each If condition) 
+In If activity Expression- @contains(item().name,'emp')
+In true contion  activity- open - create set variable->to store value based on contition true and false
+
+19)Set Variable: To set the value of existing variable of type string,booL,Array,int
+Problem statement: we have variable A that contains - Date,
+                           Variable B - Day
+                           variable C =  A + B 
+Solution: 1)cretae set variable activity- give name and select type
+          2)in value pass dynamically - use functiojn date UTCnow - For A 
+          3)Add new variable - Variable B - 'Monday' is value
+          Note: connect variable A and B with Variable C
+          4)Add new variable C =  A + B - use concat(select A and B variable)
+
+20)Append variable :add a value to an existing array variable defined in a Data Factory.
+Problem Statement: We have array [10,20,20] we need to add 90 in this array. so we use append variable
+Solution: Create a new append variable type is Array-> pass value [10,20,20]
+in Settings selesct variable A and passs value 90.
+Note: To verify the value 90 is added use set variable.
+append variable->set variable(pass the out of append variable)
+
+21)Store procedue in ADF - A store procedure is a prepared SQL code that you save, so the code can be reused over and over again.
+We can also create parameter based SP
+Solution: create store procedure activity
+Add parameter id and pass the value dynamically Id
+
+22)Lookup Activity:
+
 
 
 
