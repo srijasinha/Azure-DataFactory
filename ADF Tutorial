@@ -272,7 +272,11 @@ case employee -copy into employee folder
 case department - copy into department folder
 Solution: crate a new pipwline->switch activity->create a parameter->Pass the palameter in Expression->Add case -Employee - then copy data in employee container, add case for department
 
-
+25)Validation actity: we can use validation activity in qa pipeline to ensure the pipeline only continues the  execution once it has validated
+attached dataset refrence exists,then it mete sthe specefied crieteria, or timeout has been reached.
+Problem statement: validation ---sucess---return true
+                            ------failure----return false
+solution:Validation activity->set variable1(True)->set variable2(False)
 
 
 
