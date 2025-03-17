@@ -261,6 +261,18 @@ Solution: lookup activity (employee_resign table) -< for each--inside for each (
 Explanation: In look up activity we look up for all employee id,Then all employee id is iterated through for each activity.
 In Store procedure the employee id is deleted from employee_table.
 
+23)Wait activity: we will use wait activity in pipeline,the pipeline waits for the specified period of timebefore continueing with execution 
+of subsequent activities.
+Solution - copy_data(sales)-<wait-<copy_data(customer)
+
+24)switch activity:It is same as oyher programing language.It evaluates set of activities, correponding to case that matches the condition
+evaluation.
+Problem statement:We need to copy data into input/output location based on parameter value passed
+case employee -copy into employee folder
+case department - copy into department folder
+Solution: crate a new pipwline->switch activity->create a parameter->Pass the palameter in Expression->Add case -Employee - then copy data in employee container, add case for department
+
+
 
 
 
