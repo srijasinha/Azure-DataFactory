@@ -189,8 +189,10 @@ b)create parameter
 c)In connection Pass the parmaeter dynamically
 d)Pass the value of parameter, this will show data
 
-15)Parameterization of linked service- We can pass dynamic linked service .Ex- we have 2 -3 
-
+15)Parameterization of linked service- We can pass dynamic linked service .Ex- we have 2 -3 sql server and we have multiple db available
+so isstead of creating multiple linked service we create one 
+Solution - create a new linked service->At bottom create a parameter->In account selection method select enter manually->click on Db name (add dynamically)
+select parameter you created.
 
 
 
