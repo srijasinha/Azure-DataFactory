@@ -42,6 +42,18 @@ G)Trigger- Trigger are objects that enable automatic execution of pipeline based
 	c)Event storage Trigger - When we upload or delete a file other than a Txt file to run a pipeeline then this Event is triggered.
  d)Manual Triger- Allows manual execution of pipeline by a user or external System.
 
+H)GetMedaData Activity-GetMetadata retrieves metadata about files or datasets
+1)ItemNam- Name of the file or folder
+2)ItemType - Type of the file or folder.Returned value is file or folder
+3)size- Size of the file in bytes.Applicable only to files.
+4)Createddatetime - created datetime of the file or folder
+5)LastModified - LastModified datetime of the file or folder
+6)Childitems- List of sub folders and diles in a given folder.Applicable only to folders.Returned value is a list of a name and type of each child item.
+7)Structure- Data structure of a file or relational DB table.Returned value is a list of a  column name and column type
+8)ColumnCount- Noumber of columns in a file or  relational table
+9)Exists-When a file, folder or table exists.
+
+------------------------------------------------------------------------------------------------------------------
 Practical ADF - 1)  MIGRATE THE SOURCE (DataLake) ->Copy activity  Destination (Data Lake)
 solution - DataLake storage(source)->linked service->dataset-> copy activity-<dataset-<linked service-<sink(DataLake storage)
 1) Create Resource Group
@@ -76,7 +88,7 @@ Azure Data Lake - We can use folders inside folder( herachyial )
 
 4)Problem statement - There are two  files in a container - File1 is used by Reporting team , File2 is used by data science team.
 So we need to build a solution , Reporting team can view only File 1 , not File 2 . Only File1 can go to new container
-Solution - step 1)Get Meta data activity use - All the items insite files
+Solution - step 1)Get Meta data activity use - All the items inside files
 step 2) use for each activity - (Filwe 1, File 2...) - childitem.name() we use
 step 3) use IF condition activity  inside for each - checks file1 statisfy the codition or not -- @startswith(item().name,'File')
 step 4)create a new container - reporting, transfer those reporting files only - like operator we can use
@@ -193,6 +205,27 @@ d)Pass the value of parameter, this will show data
 so isstead of creating multiple linked service we create one 
 Solution - create a new linked service->At bottom create a parameter->In account selection method select enter manually->click on Db name (add dynamically)
 select parameter you created.
+
+16)Paremeterization in a pipeline- 
+Problem Statement: We have data available in azure sql db in multiples tables
+We need to copy data into blob storage as csv file.create 1 copy data pipeline.you need to create only 1 dataset for all the tables
+because this is only one time activity.
+solution-  SQL Table (customer table, adress table) [Csv File](source)->linked service->dataset-> copy activity-<dataset-<linked service
+-<sink(customer container, Address container)(Blob Storage)
+Note:1)When we copy the customer table data should go in customer container same for adress container.
+----Do step 2 and step 3 for source and sink
+2)We need to create a parameter for Dataset and pass the values for each Tables
+3)click outside empty space of copy activity then We need to create a parameter for pipeline and pass the values for each Tables
+
+17)How to save a file in a proper format in Azure Data Factory:
+Problem statement: copy data from  blob storage one storage to another container data should be saved in date format and json format.
+Solution: 
+Azure Blob storage [Csv File](source)->linked service->dataset-> copy activity-<dataset-<linked service-<sink(Azure Blob storage)(json file)
+Note: 1)In sink dataset go to connection , click on dynamic content ->At below we will see parameter and function
+Select Date Function->UTCnow(),IST
+
+
+
 
 
 
