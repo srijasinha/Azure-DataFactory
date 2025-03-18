@@ -286,8 +286,20 @@ Problem statement: we have 4 files in a storage account. we need to filter the f
 solution: GetMedata---Filer---copy activity
 
 28)Until activity-It exectes the set of activities in a loop untill the condition associated with the activity evaluates to true.
-pipeline will be get executed untill the condition satisfies true
+pipeline will be get executed untill the condition satisfies true.
+solution: Until activity--(insside this check getMetadata activity)--If condition--set variable give contion true
+Note:Use Exists in option(settings)
 
+29)Web activity: Web activity can be used to call a custom REST endpoint from a azure data factory or synapse pipeline
+Solution:- web activity-- pass url value, method
+
+30)Fail activity:we might occasionally throw an error intensionally. A lookup activity might return no matching data,or a custom activity might finsih with internal error.
+Problem statement:We need to copy data into input/output location based on parameter
+case employee1 and employee2 -copy into employee folder
+case department - copy into department folder --Fail activity
+solution- switch acttivity-- Fail activity(Default case)
+
+31)Script actity-
 
 
 
