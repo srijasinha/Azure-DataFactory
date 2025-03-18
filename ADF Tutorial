@@ -278,6 +278,16 @@ Problem statement: validation ---sucess---return true
                             ------failure----return false
 solution:Validation activity->set variable1(True)->set variable2(False)
 
+26)Execute pipeline in ADF- Execute pipeline activity allows a data factory or synappse pipeline to invoke another pipeline.
+Solution:- Execute pipeline activity
+
+27)Filter activity: we can use filter  activity in a pipeline to apply a filter expression to an input array.
+Problem statement: we have 4 files in a storage account. we need to filter the file 1 and copy in anothere sink.
+solution: GetMedata---Filer---copy activity
+
+28)Until activity-It exectes the set of activities in a loop untill the condition associated with the activity evaluates to true.
+pipeline will be get executed untill the condition satisfies true
+
 
 
 
