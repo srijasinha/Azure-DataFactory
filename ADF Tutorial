@@ -315,12 +315,33 @@ crete a new pipeline and drag DataFlow.
 Note: Add condition - india  equals('Column name','india')
 
 34)Pivot transformation:use the pivot transformation to create muliple columns from the unique row values of a single column.
-Ex- County
-     INDIA
-     india
-      usa
-      UK
-solution: India   usa  uk
+Ex- County DeptId
+     INDIA   2
+     india   3
+      usa   5
+      UK   1
+Based on deptid how many  employee belongs to which contry ?
+solution:  deptid India   usa  uk
+Dataflow->source1>create one dataset----(connect with Piviot Transformation)--sink
+crete a new pipeline and drag DataFlow.
+
+35)Pivot transformation:use the pivot transformation to create muliple rows from the unique columns values of a single row.
+EX- deptid India   usa  uk
+Ex solution - deptid Country count_emp
+solution: Dataflow->source1>create one dataset----(connect with UnPiviot Transformation)--sink
+crete a new pipeline and drag DataFlow.
+
+36)Srogate Key Tranformation:To add incrementing key value to each row of data.This is useful in designing diension table in star schema
+anaylitical data model.In a star schema each member in a dimenion tables requires a unique key that is non business key.
+solution: Dataflow->source1>create one dataset----(connect with Srogate Key )--sink
+crete a new pipeline and drag DataFlow.
+
+37)Windows Transformation: Windows Transformation is where we will define windows basesd aggregations of columns in data stream
+
+
+
+
+
 
 
 
