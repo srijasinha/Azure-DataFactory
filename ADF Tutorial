@@ -341,6 +341,13 @@ We can use LAG,Dense Function ,Rank etc.
 solution: Dataflow->source1>create one dataset----(connect with Windows)--sink
 crete a new pipeline and drag DataFlow.
 
+38)Alter row transformation:Use the alter row transformation to set insert,update,delete.
+solution: Dataflow->source1>create one dataset----(connect with alterRow)--sink
+crete a new pipeline and drag DataFlow.
+
+39)Rank transformation-Use the rank transformation to generate an ordered ranking based upon sort conditions specefied by user.	
+solution: Dataflow->source1>create one dataset----(connect with Rank)--sink
+crete a new pipeline and drag DataFlow.
 
 
 
