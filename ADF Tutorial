@@ -349,6 +349,9 @@ crete a new pipeline and drag DataFlow.
 solution: Dataflow->source1>create one dataset----(connect with Rank)--sink
 crete a new pipeline and drag DataFlow.
 
+40)Trigger Email Notification in ADF when pipeline gets failed-
+solution- Set variable
+Create New Alert&Matrix rule
 
 
 
