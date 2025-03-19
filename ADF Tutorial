@@ -1,4 +1,4 @@
-Azure Data Factory-
+ Azure Data Factory-
 - It is ETL/ELT 
 -To migrate the data we can use ADF. 
 -Data Flow - It is used for Data Transformation. We can use joins, filter etc all options which are present in SQL
@@ -299,7 +299,32 @@ case employee1 and employee2 -copy into employee folder
 case department - copy into department folder --Fail activity
 solution- switch acttivity-- Fail activity(Default case)
 
-31)Script actity-
+31)Script actity-We can perform DML and DDL activity
+Solution:-Create a new activity script 
+
+32)Exist transformation- It is row filtering datatransformation that checks whether your data exists in other source or stream.
+It is sql to SQL where exists and where not exists.
+solution:Dataflow->source1>create one dataset----(connect with Exists--give left and right stream) source2>create one dataset --sink
+crete a new pipeline and drag DataFlow.
+
+33)Conditional split statement-the conditional split transformation routes data rows to diffrent streams based on matching conditions.
+It is similar to case decion struture in aprograming language.
+Problem statemnt:A data contains 3 country - if its UK it should go to uk conatainer,same for other two.
+Solution:Dataflow->source1>create one dataset----(connect with Conditional split)--sink
+crete a new pipeline and drag DataFlow.
+Note: Add condition - india  equals('Column name','india')
+
+34)Pivot transformation:use the pivot transformation to create muliple columns from the unique row values of a single column.
+Ex- County
+     INDIA
+     india
+      usa
+      UK
+solution: India   usa  uk
+
+
+
+
 
 
 
