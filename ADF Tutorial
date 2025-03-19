@@ -336,8 +336,10 @@ anaylitical data model.In a star schema each member in a dimenion tables require
 solution: Dataflow->source1>create one dataset----(connect with Srogate Key )--sink
 crete a new pipeline and drag DataFlow.
 
-37)Windows Transformation: Windows Transformation is where we will define windows basesd aggregations of columns in data stream
-
+37)Windows Transformation: Windows Transformation is where we will define windows basesd aggregations of columns in data stream.
+We can use LAG,Dense Function ,Rank etc.
+solution: Dataflow->source1>create one dataset----(connect with Windows)--sink
+crete a new pipeline and drag DataFlow.
 
 
 
